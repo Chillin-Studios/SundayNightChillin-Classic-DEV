@@ -30,8 +30,7 @@ class OutdatedState extends MusicBeatState
 		if(!leftState) {
 			if (controls.ACCEPT) {
 				leftState = true;
-				// TODO: replace this with gamebanana link when we get it
-				CoolUtil.browserLoad("https://github.com/TilNotDrip/SundayNightChillin/releases");
+				CoolUtil.browserLoad("https://gamebanana.com/mods/531330");
 			}
 			else if(controls.BACK) {
 				leftState = true;
