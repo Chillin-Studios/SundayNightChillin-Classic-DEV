@@ -384,6 +384,7 @@ class PlayState extends MusicBeatState
 			case 'philly': new states.stages.Philly();
 			case 'gbStage': new states.stages.GBStage();
 			case 'jokegbstage': new states.stages.JokeGBStage();
+			case 'pozostage': new states.stages.PozoStage();
 		}
 
 		if(isPixelStage) {

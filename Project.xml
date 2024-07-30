@@ -11,7 +11,7 @@
 
 	<!-- ______________________ PSYCH / SNC CUSTOMIZATION ______________________ -->
 
-	<define name="SNC_DEV_BUILD" if="debug" value="5" />
+	<define name="SNC_DEV_BUILD" if="debug" value="6" />
 
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="CHART_BLOCKS" unless="SNC_DEV_BUILD" />

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fgbopper2.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="thisguybopper0000" x="9" y="9" width="815" height="757" frameX="0" frameY="-9" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0001" x="9" y="9" width="815" height="757" frameX="0" frameY="-9" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0002" x="833" y="9" width="805" height="767" frameX="-1" frameY="-14" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0003" x="833" y="9" width="805" height="767" frameX="-1" frameY="-14" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0004" x="1647" y="9" width="806" height="766" frameX="-14" frameY="-8" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0005" x="1647" y="9" width="806" height="766" frameX="-14" frameY="-8" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0006" x="2462" y="9" width="829" height="738" frameX="-8" frameY="-3" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0007" x="2462" y="9" width="829" height="738" frameX="-8" frameY="-3" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0008" x="9" y="785" width="834" height="732" frameX="-10" frameY="0" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0009" x="9" y="785" width="834" height="732" frameX="-10" frameY="0" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0010" x="9" y="785" width="834" height="732" frameX="-10" frameY="0" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0011" x="9" y="785" width="834" height="732" frameX="-10" frameY="0" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0012" x="9" y="785" width="834" height="732" frameX="-10" frameY="0" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0013" x="9" y="785" width="834" height="732" frameX="-10" frameY="0" frameWidth="844" frameHeight="781"/>
+	<SubTexture name="thisguybopper0014" x="9" y="785" width="834" height="732" frameX="-10" frameY="0" frameWidth="844" frameHeight="781"/>
+</TextureAtlas>

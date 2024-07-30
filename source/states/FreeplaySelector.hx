@@ -18,9 +18,9 @@ class FreeplaySelector extends MusicBeatState
 	var freeplayOptions:Array<Array<Dynamic>> = [
 		// Name, Unlocked
 		['part1', true],
-        ['part2', false],
+        ['part2', true],
         ['part3', false],
-        ['extra', false],
+        ['extra', true],
         ['old', true]
 	];
 

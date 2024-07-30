@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="thesun.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="sunnyfunny0000" x="9" y="9" width="275" height="252"/>
+	<SubTexture name="sunnyfunny0001" x="9" y="9" width="275" height="252"/>
+	<SubTexture name="sunnyfunny0002" x="293" y="9" width="275" height="252"/>
+	<SubTexture name="sunnyfunny0003" x="293" y="9" width="275" height="252"/>
+</TextureAtlas>

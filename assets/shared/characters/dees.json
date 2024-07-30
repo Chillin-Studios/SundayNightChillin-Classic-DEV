@@ -1,0 +1,81 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "dees idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				112,
+				7
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "dees left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				-135
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "dees down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				47
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "dees up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-45,
+				-46
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "dees right",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/dees",
+	"position": [
+		50,
+		160
+	],
+	"healthicon": "dees",
+	"flip_x": false,
+	"note_colors": [
+		["6AA040", "FFFFFF", "3A756A"],
+		["C2C2C2", "FFFFFF", "6C6B9B"],
+		["6AA040", "FFFFFF", "3A756A"],
+		["C2C2C2", "FFFFFF", "6C6B9B"]
+	],
+	"camera_position": [
+		-80,
+		100
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bgbopper_RIGHT.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="right boppers0000" x="9" y="9" width="663" height="485" frameX="0" frameY="-5" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0001" x="9" y="9" width="663" height="485" frameX="0" frameY="-5" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0002" x="681" y="9" width="663" height="482" frameX="0" frameY="-8" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0003" x="681" y="9" width="663" height="482" frameX="0" frameY="-8" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0004" x="1353" y="9" width="661" height="488" frameX="-2" frameY="-2" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0005" x="1353" y="9" width="661" height="488" frameX="-2" frameY="-2" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0006" x="9" y="506" width="659" height="489" frameX="-4" frameY="-1" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0007" x="9" y="506" width="659" height="489" frameX="-4" frameY="-1" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0008" x="677" y="506" width="660" height="490" frameX="-3" frameY="0" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0009" x="677" y="506" width="660" height="490" frameX="-3" frameY="0" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0010" x="1346" y="506" width="659" height="490" frameX="-4" frameY="0" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0011" x="1346" y="506" width="659" height="490" frameX="-4" frameY="0" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0012" x="677" y="506" width="660" height="490" frameX="-3" frameY="0" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0013" x="677" y="506" width="660" height="490" frameX="-3" frameY="0" frameWidth="663" frameHeight="490"/>
+	<SubTexture name="right boppers0014" x="1346" y="506" width="659" height="490" frameX="-4" frameY="0" frameWidth="663" frameHeight="490"/>
+</TextureAtlas>

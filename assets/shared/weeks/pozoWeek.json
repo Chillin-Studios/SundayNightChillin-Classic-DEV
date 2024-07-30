@@ -1,0 +1,28 @@
+{
+    "songs": [
+        [
+            "deestructor",
+            "dee",
+            [
+                82,
+				154,
+				149
+            ]
+        ]
+    ],
+    "weekCharacters": [
+        "",
+        "",
+        ""
+    ],
+    "weekBackground": "pozo",
+    "weekBefore": "gbWeek",
+    "storyName": "Week Bozo",
+    "weekName": "Week Bozo",
+    "startUnlocked": true,
+    "hiddenUntilUnlocked": false,
+    "hideStoryMode": false,
+    "hideFreeplay": false,
+    "difficulties": "Chillin",
+    "album": "part2"
+}

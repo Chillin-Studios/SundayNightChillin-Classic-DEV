@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="fgbopper1.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="peppinobopper0000" x="9" y="9" width="610" height="972" frameX="-50" frameY="-10" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0001" x="9" y="9" width="610" height="972" frameX="-50" frameY="-10" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0002" x="628" y="9" width="613" height="970" frameX="-60" frameY="-21" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0003" x="628" y="9" width="613" height="970" frameX="-60" frameY="-21" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0004" x="1250" y="9" width="614" height="971" frameX="-50" frameY="-13" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0005" x="1250" y="9" width="614" height="971" frameX="-50" frameY="-13" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0006" x="9" y="990" width="606" height="973" frameX="-12" frameY="-3" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0007" x="9" y="990" width="606" height="973" frameX="-12" frameY="-3" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0008" x="624" y="990" width="603" height="973" frameX="0" frameY="0" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0009" x="624" y="990" width="603" height="973" frameX="0" frameY="0" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0010" x="1236" y="990" width="602" height="972" frameX="-1" frameY="-1" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0011" x="1236" y="990" width="602" height="972" frameX="-1" frameY="-1" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0012" x="624" y="990" width="603" height="973" frameX="0" frameY="0" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0013" x="624" y="990" width="603" height="973" frameX="0" frameY="0" frameWidth="673" frameHeight="991"/>
+	<SubTexture name="peppinobopper0014" x="1236" y="990" width="602" height="972" frameX="-1" frameY="-1" frameWidth="673" frameHeight="991"/>
+</TextureAtlas>

@@ -1,0 +1,80 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bozo idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				89,
+				-8
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "bozo left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-99,
+				-96
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "bozo down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
+				58
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "bozo up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-117,
+				-1
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "bozo right",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/bozo",
+	"position": [
+		-30,
+		120
+	],
+	"healthicon": "bozo",
+	"flip_x": false,
+	"healthbar_colors": [
+		206,
+		77,
+		63
+	],
+	"camera_position": [
+		-50,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
