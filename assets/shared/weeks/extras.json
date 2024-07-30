@@ -1,0 +1,28 @@
+{
+    "songs": [
+        [
+            "The Peak One",
+            "bandy",
+            [
+                255,
+				165,
+				0
+            ]
+        ]
+    ],
+    "weekCharacters": [
+        "",
+        "",
+        ""
+    ],
+    "weekBackground": "bandy",
+    "weekBefore": "",
+    "storyName": "my loves boobies",
+    "weekName": "Extras",
+    "startUnlocked": true,
+    "hiddenUntilUnlocked": false,
+    "hideStoryMode": false,
+    "hideFreeplay": false,
+    "difficulties": "Chillin",
+    "album": "extra"
+}
