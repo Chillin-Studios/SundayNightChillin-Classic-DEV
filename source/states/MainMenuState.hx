@@ -11,7 +11,7 @@ import states.editors.MasterEditorMenu;
 class MainMenuState extends MusicBeatState
 {
 	public static var psychEngineVersion:String = '0.7.3';
-	public static var chillinVersion:String = '0.1.0';
+	public static var chillinVersion:String = '0.2.0';
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;

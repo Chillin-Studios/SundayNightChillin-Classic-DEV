@@ -24,7 +24,7 @@ class SystemUtil
     ')
     #end
 	@:noCompletion
-	public static function _darkTitle(mode:Int) {}
+	static function _darkTitle(mode:Int) {}
 
 	public static function darkTitle(isDark:Bool)
     {
