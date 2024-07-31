@@ -5,7 +5,17 @@ import backend.StageData;
 
 class OptionsState extends MusicBeatState
 {
-	var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'Visuals and UI', 'Gameplay'];
+	var options:Array<String> = [
+		'Note Colors',
+		'Controls',
+		'Adjust Delay and Combo',
+		'Graphics',
+		'Visuals and UI',
+		'Gameplay'
+		#if SNC_DEV_BUILD,
+		'Developer'
+		#end
+	];
 	private var grpOptions:FlxTypedGroup<Alphabet>;
 	private static var curSelected:Int = 0;
 	public static var menuBG:FlxSprite;
@@ -17,14 +27,18 @@ class OptionsState extends MusicBeatState
 				openSubState(new options.NotesSubState());
 			case 'Controls':
 				openSubState(new options.ControlsSubState());
+			case 'Adjust Delay and Combo':
+				MusicBeatState.switchState(new options.NoteOffsetState());
 			case 'Graphics':
 				openSubState(new options.GraphicsSettingsSubState());
 			case 'Visuals and UI':
 				openSubState(new options.VisualsUISubState());
 			case 'Gameplay':
 				openSubState(new options.GameplaySettingsSubState());
-			case 'Adjust Delay and Combo':
-				MusicBeatState.switchState(new options.NoteOffsetState());
+			#if SNC_DEV_BUILD
+			case 'Developer':
+				openSubState(new options.DevSettingsSubState());
+			#end
 		}
 	}
 
@@ -107,7 +121,7 @@ class OptionsState extends MusicBeatState
 		}
 		else if (controls.ACCEPT) openSelectedSubstate(options[curSelected]);
 	}
-	
+
 	function changeSelection(change:Int = 0) {
 		curSelected += change;
 		if (curSelected < 0)

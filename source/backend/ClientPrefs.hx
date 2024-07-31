@@ -63,6 +63,12 @@ import flixel.input.gamepad.FlxGamepadInputID;
 	public var safeFrames:Float = 10;
 	public var guitarHeroSustains:Bool = false;
 	public var discordRPC:Bool = true;
+
+	#if SNC_DEV_BUILD
+	// Developer Options
+	public var chartBlocks:Bool = false;
+	public var outdatedWarning:Bool = false;
+	#end
 }
 
 class ClientPrefs {

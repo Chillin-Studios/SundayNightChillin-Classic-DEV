@@ -216,8 +216,8 @@ class ChartingState extends MusicBeatState
 			PlayState.SONG = _song;
 		}
 
-		#if CHART_BLOCKS
-		if (Paths.formatToSongPath(_song.song) == 'anger-issues' || Paths.formatToSongPath(_song.song) == 'spitting-facts')
+		#if SNC_DEV_BUILD
+		if (ClientPrefs.data.chartBlocks && (Paths.formatToSongPath(_song.song) == 'anger-issues' || Paths.formatToSongPath(_song.song) == 'spitting-facts'))
 		{
 			FlxTransitionableState.skipNextTransIn = true;
 			FlxG.mouse.visible = false;

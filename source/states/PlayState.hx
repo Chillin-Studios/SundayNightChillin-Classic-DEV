@@ -1747,8 +1747,8 @@ class PlayState extends MusicBeatState
 			{
 				if (controls.justPressed('debug_1'))
 				{
-					#if CHART_BLOCKS
-					if (songName == 'anger-issues' || songName == 'spitting-facts')
+					#if SNC_DEV_BUILD
+					if (ClientPrefs.data.chartBlocks && (songName == 'anger-issues' || songName == 'spitting-facts'))
 						loadSpittingFacts();
 					else
 					#end

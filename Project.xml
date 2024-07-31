@@ -14,7 +14,6 @@
 	<define name="SNC_DEV_BUILD" if="debug" value="6" />
 
 	<define name="ACHIEVEMENTS_ALLOWED" />
-	<define name="CHART_BLOCKS" unless="SNC_DEV_BUILD" />
 	<define name="DISCORD_ALLOWED" if="cpp" />
 	<define name="HSCRIPT_ALLOWED" if="desktop" />
 	<define name="MODS_ALLOWED" if="desktop" />
