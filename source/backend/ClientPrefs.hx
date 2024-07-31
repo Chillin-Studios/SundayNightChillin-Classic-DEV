@@ -68,6 +68,7 @@ import flixel.input.gamepad.FlxGamepadInputID;
 	// Developer Options
 	public var chartBlocks:Bool = false;
 	public var outdatedWarning:Bool = false;
+	public var spittingFactsMechanics:Bool = false;
 	#end
 }
 

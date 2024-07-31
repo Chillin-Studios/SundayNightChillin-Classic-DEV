@@ -280,8 +280,8 @@ class PlayState extends MusicBeatState
 		healthGain = ClientPrefs.getGameplaySetting('healthgain');
 		healthLoss = ClientPrefs.getGameplaySetting('healthloss');
 		instakillOnMiss = ClientPrefs.getGameplaySetting('instakill');
-		practiceMode = (ClientPrefs.getGameplaySetting('practice') && Paths.formatToSongPath(SONG.song) != 'spitting-facts');
-		cpuControlled = (ClientPrefs.getGameplaySetting('botplay') && Paths.formatToSongPath(SONG.song) != 'spitting-facts');
+		practiceMode = (ClientPrefs.getGameplaySetting('practice') && (#if SNC_DEV_BUILD !ClientPrefs.data.spittingFactsMechanics || #end Paths.formatToSongPath(SONG.song) != 'spitting-facts'));
+		cpuControlled = (ClientPrefs.getGameplaySetting('botplay') && (#if SNC_DEV_BUILD !ClientPrefs.data.spittingFactsMechanics || #end Paths.formatToSongPath(SONG.song) != 'spitting-facts'));
 		guitarHeroSustains = ClientPrefs.data.guitarHeroSustains;
 
 		if(Paths.formatToSongPath(SONG.song) == 'anger-issues')
@@ -483,9 +483,9 @@ class PlayState extends MusicBeatState
 		timeBar.alpha = 0;
 		timeBar.visible = showTime;
 
-		if (ClientPrefs.data.ghostTapping && songName == 'spitting-facts'
-		||	ClientPrefs.getGameplaySetting('botplay') && !cpuControlled
-		||	ClientPrefs.getGameplaySetting('practice') && !practiceMode)
+		if (songName == 'spitting-facts' && #if SNC_DEV_BUILD ClientPrefs.data.spittingFactsMechanics && #end
+		(ClientPrefs.data.ghostTapping || ClientPrefs.getGameplaySetting('botplay') && !cpuControlled
+		|| ClientPrefs.getGameplaySetting('practice') && !practiceMode))
 		{
 			var hahaText:String = '';
 
@@ -2764,7 +2764,7 @@ class PlayState extends MusicBeatState
 		});
 		plrInputNotes.sort(sortHitNotes);
 
-		var shouldMiss:Bool = (!ClientPrefs.data.ghostTapping || songName == 'spitting-facts');
+		var shouldMiss:Bool = (!ClientPrefs.data.ghostTapping || #if SNC_DEV_BUILD ClientPrefs.data.spittingFactsMechanics && #end songName == 'spitting-facts');
 
 		if (plrInputNotes.length != 0) {
 			var funnyNote:Note = plrInputNotes[0];
@@ -2910,7 +2910,7 @@ class PlayState extends MusicBeatState
 
 	function noteMissPress(direction:Int = 1):Void
 	{
-		if(ClientPrefs.data.ghostTapping && songName != 'spitting-facts') return;
+		if(ClientPrefs.data.ghostTapping && (#if SNC_DEV_BUILD !ClientPrefs.data.spittingFactsMechanics || #end songName != 'spitting-facts')) return;
 
 		noteMissCommon(direction);
 		FlxG.sound.play(Paths.soundRandom('missnote', 1, 3), FlxG.random.float(0.1, 0.2));
