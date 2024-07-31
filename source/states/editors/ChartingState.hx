@@ -405,6 +405,8 @@ class ChartingState extends MusicBeatState
 	var playSoundDad:FlxUICheckBox = null;
 	var UI_songTitle:FlxUIInputText;
 	var stageDropDown:FlxUIDropDownMenu;
+	var credit_composer:FlxUIInputText;
+	var credit_charter:FlxUIInputText;
 	#if FLX_PITCH
 	var sliderRate:FlxUISlider;
 	#end
@@ -603,6 +605,12 @@ class ChartingState extends MusicBeatState
 		stageDropDown.selectedLabel = _song.stage;
 		blockPressWhileScrolling.push(stageDropDown);
 
+		credit_composer = new FlxUIInputText(player1DropDown.x, 355, 120, _song.credits.composer, 8);
+		blockPressWhileTypingOn.push(credit_composer);
+
+		credit_charter = new FlxUIInputText(stageDropDown.x, credit_composer.y, 120, _song.credits.charter, 8);
+		blockPressWhileTypingOn.push(credit_charter);
+
 		var tab_group_song = new FlxUI(null, UI_box);
 		tab_group_song.name = "Song";
 		tab_group_song.add(UI_songTitle);
@@ -618,6 +626,8 @@ class ChartingState extends MusicBeatState
 		tab_group_song.add(loadEventJson);
 		tab_group_song.add(stepperBPM);
 		tab_group_song.add(stepperSpeed);
+		tab_group_song.add(credit_composer);
+		tab_group_song.add(credit_charter);
 		tab_group_song.add(new FlxText(stepperBPM.x, stepperBPM.y - 15, 0, 'Song BPM:'));
 		tab_group_song.add(new FlxText(stepperBPM.x + 100, stepperBPM.y - 15, 0, 'Song Offset:'));
 		tab_group_song.add(new FlxText(stepperSpeed.x, stepperSpeed.y - 15, 0, 'Song Speed:'));
@@ -625,6 +635,8 @@ class ChartingState extends MusicBeatState
 		tab_group_song.add(new FlxText(gfVersionDropDown.x, gfVersionDropDown.y - 15, 0, 'Girlfriend:'));
 		tab_group_song.add(new FlxText(player1DropDown.x, player1DropDown.y - 15, 0, 'Boyfriend:'));
 		tab_group_song.add(new FlxText(stageDropDown.x, stageDropDown.y - 15, 0, 'Stage:'));
+		tab_group_song.add(new FlxText(credit_composer.x, credit_composer.y - 15, 0, 'Composer:'));
+		tab_group_song.add(new FlxText(credit_charter.x, credit_charter.y - 15, 0, 'Charter:'));
 		tab_group_song.add(player2DropDown);
 		tab_group_song.add(gfVersionDropDown);
 		tab_group_song.add(player1DropDown);
@@ -778,7 +790,7 @@ class ChartingState extends MusicBeatState
 		});
 		clearSectionButton.color = FlxColor.RED;
 		clearSectionButton.label.color = FlxColor.WHITE;
-		
+
 		check_notesSec = new FlxUICheckBox(10, clearSectionButton.y + 25, null, null, "Notes", 100);
 		check_notesSec.checked = true;
 		check_eventsSec = new FlxUICheckBox(check_notesSec.x + 100, check_notesSec.y, null, null, "Events", 100);
@@ -1702,6 +1714,8 @@ class ChartingState extends MusicBeatState
 		}
 		Conductor.songPosition = FlxG.sound.music.time;
 		_song.song = UI_songTitle.text;
+		_song.credits.composer = credit_composer.text;
+		_song.credits.charter = credit_charter.text;
 
 		strumLineUpdateY();
 		for (i in 0...8){
