@@ -181,6 +181,11 @@ class Paths
 		return sound;
 	}
 
+	public static function soundStr(key:String, ?library:String):String
+	{
+		return getPath('sounds/$key.$SOUND_EXT', SOUND, library, true);
+	}
+
 	inline static public function soundRandom(key:String, min:Int, max:Int, ?library:String)
 	{
 		return sound(key + FlxG.random.int(min, max), library);
@@ -190,6 +195,11 @@ class Paths
 	{
 		var file:Sound = returnSound('music', key, library);
 		return file;
+	}
+
+	public static function musicStr(key:String, ?library:String):String
+	{
+		return getPath('music/$key.$SOUND_EXT', MUSIC, library, true);
 	}
 
 	inline static public function voices(song:String, postfix:String = null):Any
@@ -243,6 +253,11 @@ class Paths
 
 		trace('oh no its returning null NOOOO ($file)');
 		return null;
+	}
+
+	public static function imageStr(key:String, ?library:String):String
+	{
+		return getPath('images/$key.png', IMAGE, library, true);
 	}
 
 	static public function cacheBitmap(file:String, ?bitmap:BitmapData = null, ?allowGPU:Bool = true)

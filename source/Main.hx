@@ -7,6 +7,7 @@ import android.content.Context;
 import backend.SystemUtil;
 
 import debug.FPSCounter;
+import debug.FunkinSoundTray;
 
 import flixel.graphics.FlxGraphic;
 import flixel.FlxGame;
@@ -42,7 +43,6 @@ class Main extends Sprite
 		width: 1280,
 		height: 720,
 		initialState: TitleState,
-		zoom: -1.0,
 		framerate: 60,
 		skipSplash: true,
 		startFullscreen: false
@@ -90,20 +90,23 @@ class Main extends Sprite
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
 
-		if (game.zoom == -1.0)
-		{
-			var ratioX:Float = stageWidth / game.width;
-			var ratioY:Float = stageHeight / game.height;
-			game.zoom = Math.min(ratioX, ratioY);
-			game.width = Math.ceil(stageWidth / game.zoom);
-			game.height = Math.ceil(stageHeight / game.zoom);
-		}
-	
+		var ratioX:Float = stageWidth / game.width;
+		var ratioY:Float = stageHeight / game.height;
+		game.width = Math.ceil(stageWidth / -1);
+		game.height = Math.ceil(stageHeight / -1);
+
 		#if LUA_ALLOWED Lua.set_callbacks_function(cpp.Callable.fromStaticFunction(psychlua.CallbackHandler.call)); #end
 		Controls.instance = new Controls();
 		ClientPrefs.loadDefaultKeys();
 		#if ACHIEVEMENTS_ALLOWED Achievements.load(); #end
-		addChild(new FlxGame(game.width, game.height, game.initialState, #if (flixel < "5.0.0") game.zoom, #end game.framerate, game.framerate, game.skipSplash, game.startFullscreen));
+
+		var funkinGame:FlxGame = new FlxGame(game.width, game.height, game.initialState, game.framerate, game.framerate, game.skipSplash, game.startFullscreen);
+
+		@:privateAccess
+		funkinGame._customSoundTray = FunkinSoundTray;
+
+		addChild(funkinGame);
+
 		SystemUtil.darkTitle(true);
 
 		#if !mobile
