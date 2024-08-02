@@ -65,6 +65,12 @@
 	],
 	"healthicon": "bozo",
 	"flip_x": false,
+	"note_colors": [
+		["FE0008", "FFFFFF", "651038"],
+		["585858", "FFFFFF", "242424"],
+		["FE0008", "FFFFFF", "651038"],
+		["585858", "FFFFFF", "242424"]
+	],
 	"healthbar_colors": [
 		206,
 		77,
