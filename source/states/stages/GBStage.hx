@@ -90,6 +90,8 @@ class GBStage extends BaseStage
                         black.alpha = 0;
                         add(black);
 
+						isLightning = true;
+
                         // Just so it doesn't flash black before playing.
                         new FlxTimer().start(1, function (tmr:FlxTimer) {
                             black.alpha = 1;

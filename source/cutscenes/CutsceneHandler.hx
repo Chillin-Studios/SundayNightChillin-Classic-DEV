@@ -55,7 +55,7 @@ class CutsceneHandler extends FlxBasic
 			
 			kill();
 			destroy();
-			PlayState.instance.remove(this);
+			FlxG.state.remove(this);
 		}
 		
 		while(timedEvents.length > 0 && timedEvents[0][0] <= cutsceneTime)

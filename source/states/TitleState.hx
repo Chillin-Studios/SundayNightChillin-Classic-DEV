@@ -1,6 +1,10 @@
 package states;
 
 
+#if VIDEOS_ALLOWED
+import objects.VideoSprite;
+#end
+
 import psychlua.LuaUtils;
 import backend.Highscore;
 
@@ -375,6 +379,29 @@ class TitleState extends MusicBeatState
 
 				new FlxTimer().start(1, function(tmr:FlxTimer)
 				{
+					#if VIDEOS_ALLOWED
+					if (WelcomeState.isWhatYoutuber == SABER) {
+						if (FlxG.sound.music != null)
+							FlxG.sound.music.stop();
+
+						var kids:VideoSprite = new VideoSprite(Paths.video('best_intro'), false, false, false);
+						kids.finishCallback = function()
+						{
+							FlxTransitionableState.skipNextTransIn = true;
+							FlxTransitionableState.skipNextTransOut = true;
+
+							FlxG.sound.playMusic(Paths.music('sncTitle'));
+
+							if (mustUpdate) {
+								MusicBeatState.switchState(new OutdatedState());
+							} else {
+								MusicBeatState.switchState(new MainMenuState());
+							}
+						};
+						add(kids);
+						kids.videoSprite.play();
+					} else
+					#end
 					if (mustUpdate #if SNC_DEV_BUILD && ClientPrefs.data.outdatedWarning #end) {
 						MusicBeatState.switchState(new OutdatedState());
 					} else {

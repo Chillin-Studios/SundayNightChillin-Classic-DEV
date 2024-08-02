@@ -1762,6 +1762,7 @@ class PlayState extends MusicBeatState
 		if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.switchOldIcon(boyfriend.healthIcon);
+			iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
 			reloadHealthBarColors();
 		}
 
@@ -2504,6 +2505,7 @@ class PlayState extends MusicBeatState
 						FlxG.save.flush();
 					}
 					changedDifficulty = false;
+
 				}
 				else
 				{
