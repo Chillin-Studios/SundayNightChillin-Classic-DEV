@@ -21,7 +21,7 @@ class DevSettingsSubState extends BaseOptionsMenu
 		addOption(option);
 
         var option:Option = new Option('Spitting Facts Mechanics',
-			'If checked, will completely disable Botplay and Practice Mode. (Only when playing Spitting Facts)',
+			'If Unchecked, will completely disable Botplay and Practice Mode. (Only when playing Spitting Facts)',
 			'spittingFactsMechanics',
 			'bool');
 		addOption(option);
