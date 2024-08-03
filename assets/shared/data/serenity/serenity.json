@@ -1,9 +1,6 @@
 {
 	"song": {
-		"player1": "bf",
-		"gfVersion": "gf",
-		"player2": "gb",
-		"events": [],
+		"song": "Serenity",
 		"notes": [
 			{
 				"sectionBeats": 4,
@@ -3968,14 +3965,19 @@
 				"mustHitSection": true
 			}
 		],
+		"events": [],
+		"bpm": 130,
 		"credits": {
 			"composer": "gameboy1969",
 			"charter": "gameboy1969 + TechnikTil"
 		},
-		"song": "Serenity",
-		"stage": "gbStage",
+
 		"needsVoices": true,
-		"bpm": 130,
-		"speed": 2.5
+		"speed": 2.5,
+
+		"player1": "bf",
+		"player2": "gb",
+		"gfVersion": "gf",
+		"stage": "gbStage"
 	}
 }

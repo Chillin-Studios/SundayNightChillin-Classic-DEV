@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gameboy_silly.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Down Silly0000" x="5" y="5" width="351" height="586" frameX="0" frameY="-4" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0001" x="5" y="5" width="351" height="586" frameX="0" frameY="-4" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0002" x="361" y="5" width="343" height="587" frameX="-3" frameY="-2" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0003" x="361" y="5" width="343" height="587" frameX="-3" frameY="-2" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0004" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0005" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0006" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0007" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0008" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0009" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0010" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0011" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0012" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Down Silly0013" x="709" y="5" width="340" height="589" frameX="-4" frameY="0" frameWidth="351" frameHeight="590"/>
+	<SubTexture name="Idle Silly0000" x="1054" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0001" x="1054" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0002" x="1390" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0003" x="1390" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0004" x="1726" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0005" x="2062" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0006" x="2062" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0007" x="2062" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0008" x="2062" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0009" x="2398" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0010" x="2398" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0011" x="2734" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0012" x="2734" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0013" x="3070" y="5" width="331" height="618"/>
+	<SubTexture name="Idle Silly0014" x="3406" y="5" width="331" height="618"/>
+	<SubTexture name="Left Silly0000" x="5" y="628" width="376" height="608" frameX="0" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0001" x="5" y="628" width="376" height="608" frameX="0" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0002" x="386" y="628" width="374" height="608" frameX="-2" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0003" x="386" y="628" width="374" height="608" frameX="-2" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0004" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0005" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0006" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0007" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0008" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0009" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0010" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0011" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0012" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Left Silly0013" x="765" y="628" width="370" height="608" frameX="-7" frameY="0" frameWidth="377" frameHeight="608"/>
+	<SubTexture name="Right Silly0000" x="1140" y="628" width="387" height="625" frameX="-2" frameY="0" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0001" x="1140" y="628" width="387" height="625" frameX="-2" frameY="0" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0002" x="1532" y="628" width="379" height="613" frameX="0" frameY="-12" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0003" x="1532" y="628" width="379" height="613" frameX="0" frameY="-12" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0004" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0005" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0006" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0007" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0008" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0009" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0010" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0011" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0012" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Right Silly0013" x="1916" y="628" width="375" height="611" frameX="0" frameY="-14" frameWidth="389" frameHeight="625"/>
+	<SubTexture name="Up Silly0000" x="2296" y="628" width="369" height="630" frameX="-3" frameY="0" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0001" x="2296" y="628" width="369" height="630" frameX="-3" frameY="0" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0002" x="2670" y="628" width="371" height="626" frameX="-1" frameY="-4" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0003" x="2670" y="628" width="371" height="626" frameX="-1" frameY="-4" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0004" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0005" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0006" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0007" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0008" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0009" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0010" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0011" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0012" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+	<SubTexture name="Up Silly0013" x="3046" y="628" width="374" height="625" frameX="0" frameY="-5" frameWidth="374" frameHeight="630"/>
+</TextureAtlas>

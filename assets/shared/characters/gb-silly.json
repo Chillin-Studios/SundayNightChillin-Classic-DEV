@@ -1,0 +1,109 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
+			],
+			"fps": 24,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "Idle Silly"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [
+				9,
+				10,
+				11,
+				12,
+				13,
+				14
+			],
+			"fps": 24,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "Idle Silly"
+		},
+		{
+			"offsets": [
+				55,
+				-9
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Left Silly"
+		},
+		{
+			"offsets": [
+				13,
+				-28
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Down Silly"
+		},
+		{
+			"offsets": [
+				53,
+				13
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Up Silly"
+		},
+		{
+			"offsets": [
+				-13,
+				7
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Right Silly"
+		}
+	],
+	"vocals_file": "gb",
+	"no_antialiasing": false,
+	"image": "characters/gameboy_silly",
+	"position": [
+		38,
+		165
+	],
+	"healthicon": "gb",
+	"flip_x": false,
+	"camera_position": [
+		-23,
+		13
+	],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"note_colors": [
+		["FF00EB", "FFFFFF", "4C0047"],
+		["A14DD9", "FFFFFF", "381B4C"],
+		["FF00EB", "FFFFFF", "4C0047"],
+		["A14DD9", "FFFFFF", "381B4C"]
+	],
+	"_editor_isPlayer": false
+}

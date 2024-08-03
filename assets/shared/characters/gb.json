@@ -57,8 +57,8 @@
 		},
 		{
 			"offsets": [
-				-22,
-				-7
+				-7,
+				-5
 			],
 			"loop": false,
 			"fps": 24,
@@ -69,8 +69,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-14,
-				-15
+				-13,
+				-14
 			],
 			"anim": "singDOWN-alt",
 			"fps": 24,
@@ -80,8 +80,8 @@
 		{
 			"loop": false,
 			"offsets": [
-				-21,
-				12
+				-22,
+				13
 			],
 			"anim": "singUP-alt",
 			"fps": 24,
@@ -91,7 +91,7 @@
 		{
 			"offsets": [
 				-30,
-				-7
+				-6
 			],
 			"loop": false,
 			"fps": 24,
@@ -120,14 +120,14 @@
 	"no_antialiasing": false,
 	"image": "characters/gameboy",
 	"position": [
-		20,
-		170
+		18,
+		172
 	],
 	"healthicon": "gb",
 	"flip_x": false,
 	"camera_position": [
-		0,
-		0
+		-2,
+		-2
 	],
 	"sing_duration": 6.1,
 	"scale": 1,
