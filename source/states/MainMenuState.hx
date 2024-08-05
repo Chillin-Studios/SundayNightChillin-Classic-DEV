@@ -20,6 +20,7 @@ class MainMenuState extends MusicBeatState
 		'story_mode',
 		'freeplay',
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
+		'shop',
 		'credits',
 		'options'
 	];
@@ -184,6 +185,9 @@ class MainMenuState extends MusicBeatState
 							MusicBeatState.switchState(new AchievementsMenuState());
 						#end
 
+						case 'shop':
+							MusicBeatState.switchState(new ShopState());
+
 						case 'credits':
 							MusicBeatState.switchState(new CreditsState());
 
@@ -196,6 +200,9 @@ class MainMenuState extends MusicBeatState
 								PlayState.SONG.splashSkin = null;
 								PlayState.stageUI = 'normal';
 							}
+
+						default:
+							MusicBeatState.switchState(new MainMenuState());
 					}
 				});
 
