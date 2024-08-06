@@ -5,9 +5,9 @@
 				0,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.2"
+						"Stage Zoom",
+						"1.2",
+						""
 					]
 				]
 			],
@@ -45,9 +45,9 @@
 				39500,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.4"
+						"Stage Zoom",
+						"1.4",
+						""
 					]
 				]
 			],
@@ -65,9 +65,9 @@
 				40000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.2"
+						"Stage Zoom",
+						"1.2",
+						""
 					]
 				]
 			],
@@ -75,9 +75,9 @@
 				43000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1"
+						"Stage Zoom",
+						"1",
+						""
 					]
 				]
 			],
@@ -85,9 +85,9 @@
 				43500,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.8"
+						"Stage Zoom",
+						"0.8",
+						""
 					]
 				]
 			],
@@ -95,9 +95,9 @@
 				44000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.2"
+						"Stage Zoom",
+						"1.2",
+						""
 					]
 				]
 			],

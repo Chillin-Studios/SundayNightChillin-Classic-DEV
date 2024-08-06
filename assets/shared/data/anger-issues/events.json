@@ -10,9 +10,9 @@
 						"0"
 					],
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.8"
+						"Stage Zoom",
+						"0.8",
+						""
 					]
 				]
 			],
@@ -55,9 +55,9 @@
 						"gb-angry"
 					],
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.9"
+						"Stage Zoom",
+						"0.9",
+						""
 					]
 				]
 			],
@@ -110,9 +110,9 @@
 				51000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.6"
+						"Stage Zoom",
+						"0.6",
+						""
 					]
 				]
 			],
@@ -160,9 +160,9 @@
 				75000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.9"
+						"Stage Zoom",
+						"0.9",
+						""
 					]
 				]
 			],
@@ -170,9 +170,9 @@
 				87000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1"
+						"Stage Zoom",
+						"1",
+						""
 					]
 				]
 			],
@@ -180,9 +180,9 @@
 				88500,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.05"
+						"Stage Zoom",
+						"1.05",
+						""
 					]
 				]
 			],
@@ -190,9 +190,9 @@
 				89250,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.1"
+						"Stage Zoom",
+						"1.1",
+						""
 					]
 				]
 			],
@@ -200,9 +200,9 @@
 				89718.75,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.15"
+						"Stage Zoom",
+						"1.15",
+						""
 					]
 				]
 			],
@@ -210,9 +210,9 @@
 				90000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.2"
+						"Stage Zoom",
+						"1.2",
+						""
 					]
 				]
 			],
@@ -220,9 +220,9 @@
 				91500,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1"
+						"Stage Zoom",
+						"1",
+						""
 					]
 				]
 			],
@@ -230,9 +230,9 @@
 				93000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.05"
+						"Stage Zoom",
+						"1.05",
+						""
 					]
 				]
 			],
@@ -240,9 +240,9 @@
 				94500,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.1"
+						"Stage Zoom",
+						"1.1",
+						""
 					]
 				]
 			],
@@ -250,9 +250,9 @@
 				95250,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.15"
+						"Stage Zoom",
+						"1.15",
+						""
 					]
 				]
 			],
@@ -260,9 +260,9 @@
 				96000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"1.2"
+						"Stage Zoom",
+						"1.2",
+						""
 					]
 				]
 			],
@@ -270,9 +270,9 @@
 				97500,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.8"
+						"Stage Zoom",
+						"0.8",
+						""
 					]
 				]
 			],
@@ -280,9 +280,9 @@
 				99000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.6"
+						"Stage Zoom",
+						"0.6",
+						""
 					]
 				]
 			],
@@ -295,9 +295,9 @@
 						"gb-angrier"
 					],
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.65"
+						"Stage Zoom",
+						"0.65",
+						""
 					],
 					[
 						"Duet Camera",
@@ -315,9 +315,9 @@
 						"0"
 					],
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.9"
+						"Stage Zoom",
+						"0.9",
+						""
 					]
 				]
 			],
@@ -325,9 +325,9 @@
 				159000,
 				[
 					[
-						"Set Property",
-						"defaultCamZoom",
-						"0.6"
+						"Stage Zoom",
+						"0.6",
+						""
 					]
 				]
 			]

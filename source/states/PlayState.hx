@@ -255,6 +255,8 @@ class PlayState extends MusicBeatState
 	public var startCallback:Void->Void = null;
 	public var endCallback:Void->Void = null;
 
+	private var stageZoomTween:FlxTween;
+
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -2362,6 +2364,28 @@ class PlayState extends MusicBeatState
 				{
 					isCameraOnForcedPos = false;
 					moveCameraSection();
+				}
+
+			case "Stage Zoom":
+				if(flValue2 != null)
+				{
+					if(stageZoomTween != null)
+						stageZoomTween.cancel();
+
+					stageZoomTween = FlxTween.tween(this, {defaultCamZoom: flValue1}, flValue2, {
+						ease: FlxEase.cubeOut,
+						onUpdate: function(twn:FlxTween) {
+							camGame.zoom = defaultCamZoom; // so the tween thing doesnt mess around
+						},
+						onComplete: function(twn:FlxTween) {
+							stageZoomTween = null;
+						}
+					});
+				}
+				else
+				{
+					if(flValue1 != null)
+						defaultCamZoom = flValue1;
 				}
 		}
 
