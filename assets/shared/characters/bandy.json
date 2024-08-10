@@ -1,0 +1,96 @@
+{
+	"animations": [
+		{
+			"anim": "idle",
+			"name": "Idle",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"anim": "singLEFT",
+			"name": "Left",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				32,
+				0
+			]
+		},
+		{
+			"anim": "singDOWN",
+			"name": "Down",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				4,
+				-9
+			]
+		},
+		{
+			"anim": "singUP",
+			"name": "Up",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				34,
+				27
+			]
+		},
+		{
+			"anim": "singRIGHT",
+			"name": "Right",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				-35,
+				-6
+			]
+		},
+		{
+			"anim": "whipOutBango",
+			"name": "Pull the bango",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				77,
+				2
+			]
+		}
+	],
+	"image": "characters/Bandy",
+	"scale": 1.0,
+	"sing_duration": 7.0,
+	"healthicon": "icon",
+
+	"position": [
+		20,
+		60
+	],
+	"camera_position": [
+		-20,
+		20
+	],
+
+	"flip_x": false,
+	"no_antialiasing": false,
+	"vocals_file": "bandy",
+
+	"note_colors": [
+		["F75433", "FFFFFF", "8E301D"],
+		["0066CC", "FFFFFF", "003366"],
+		["A03E3D", "FFFFFF", "381515"],
+		["FF2D32", "FFFFFF", "991B21"]
+	],
+
+	"_editor_isPlayer": false
+}

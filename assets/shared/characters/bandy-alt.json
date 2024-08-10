@@ -1,0 +1,96 @@
+{
+	"animations": [
+		{
+			"anim": "idle",
+			"name": "Idle Alt",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"anim": "singLEFT",
+			"name": "Left Alt",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				9,
+				0
+			]
+		},
+		{
+			"anim": "singDOWN",
+			"name": "Down alt",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				6,
+				0
+			]
+		},
+		{
+			"anim": "singUP",
+			"name": "Up alt",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				2,
+				2
+			]
+		},
+		{
+			"anim": "singRIGHT",
+			"name": "Right Alt",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				1,
+				1
+			]
+		},
+		{
+			"anim": "breakTheBango",
+			"name": "Break banjo",
+			"fps": 24,
+			"loop": false,
+			"indices": [],
+			"offsets": [
+				97,
+				0
+			]
+		}
+	],
+	"image": "characters/Bandy_Alt",
+	"scale": 1.0,
+	"sing_duration": 7.0,
+	"healthicon": "icon",
+
+	"position": [
+		-10,
+		64
+	],
+	"camera_position": [
+		-117,
+		4
+	],
+
+	"flip_x": false,
+	"no_antialiasing": false,
+	"vocals_file": "bandy",
+
+	"note_colors": [
+		["F75433", "FFFFFF", "8E301D"],
+		["0066CC", "FFFFFF", "003366"],
+		["A03E3D", "FFFFFF", "381515"],
+		["FF2D32", "FFFFFF", "991B21"]
+	],
+
+	"_editor_isPlayer": false
+}

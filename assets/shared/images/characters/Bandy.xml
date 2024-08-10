@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Bandy.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Down0000" x="2" y="2" width="352" height="687" frameX="-4" frameY="-10" frameWidth="362" frameHeight="697"/>
+	<SubTexture name="Down0001" x="2" y="2" width="352" height="687" frameX="-4" frameY="-10" frameWidth="362" frameHeight="697"/>
+	<SubTexture name="Down0002" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0003" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0004" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0005" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0006" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0007" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0008" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0009" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0010" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0011" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0012" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Down0013" x="356" y="2" width="362" height="697"/>
+	<SubTexture name="Idle0000" x="720" y="2" width="351" height="698" frameX="-15" frameY="-10" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0001" x="1073" y="2" width="351" height="698" frameX="-15" frameY="-10" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0002" x="1426" y="2" width="338" height="701" frameX="-20" frameY="-7" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0003" x="1766" y="2" width="338" height="701" frameX="-20" frameY="-7" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0004" x="2106" y="2" width="350" height="706" frameX="-6" frameY="-2" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0005" x="2458" y="2" width="350" height="706" frameX="-6" frameY="-2" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0006" x="2810" y="2" width="357" height="708" frameX="-2" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0007" x="3169" y="2" width="357" height="708" frameX="-2" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0008" x="3528" y="2" width="359" height="708" frameX="0" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0009" x="3889" y="2" width="359" height="708" frameX="0" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0010" x="3528" y="2" width="359" height="708" frameX="0" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0011" x="3889" y="2" width="359" height="708" frameX="0" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0012" x="3528" y="2" width="359" height="708" frameX="0" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Idle0013" x="3889" y="2" width="359" height="708" frameX="0" frameY="0" frameWidth="366" frameHeight="708"/>
+	<SubTexture name="Left0000" x="4250" y="2" width="366" height="707" frameX="0" frameY="0" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0001" x="4250" y="2" width="366" height="707" frameX="0" frameY="0" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0002" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0003" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0004" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0005" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0006" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0007" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0008" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0009" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0010" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0011" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0012" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Left0013" x="4618" y="2" width="376" height="706" frameX="0" frameY="-1" frameWidth="376" frameHeight="707"/>
+	<SubTexture name="Pull the bango0000" x="4996" y="2" width="361" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0001" x="5359" y="2" width="366" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0002" x="5727" y="2" width="357" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0003" x="6086" y="2" width="333" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0004" x="6421" y="2" width="336" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0005" x="6759" y="2" width="310" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0006" x="7071" y="2" width="310" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0007" x="7383" y="2" width="310" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0008" x="7695" y="2" width="310" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0009" x="7383" y="2" width="310" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0010" x="7695" y="2" width="310" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0011" x="7383" y="2" width="310" height="708" frameX="-78" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0012" x="2" y="712" width="432" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0013" x="436" y="712" width="563" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0014" x="1001" y="712" width="658" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0015" x="1661" y="712" width="719" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0016" x="2382" y="712" width="728" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0017" x="3112" y="712" width="722" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0018" x="3836" y="712" width="663" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0019" x="4501" y="712" width="578" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0020" x="5081" y="712" width="567" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0021" x="5650" y="712" width="563" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0022" x="6215" y="712" width="563" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0023" x="6780" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0024" x="7344" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0025" x="6780" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0026" x="7344" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0027" x="6780" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0028" x="7344" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0029" x="6780" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0030" x="7344" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0031" x="6780" y="712" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0032" x="2" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0033" x="566" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0034" x="2" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0035" x="566" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0036" x="2" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0037" x="566" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0038" x="2" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0039" x="566" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0040" x="2" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0041" x="566" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0042" x="2" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0043" x="566" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0044" x="2" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0045" x="1130" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0046" x="1694" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0047" x="2258" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0048" x="2822" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0049" x="3386" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0050" x="3950" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0051" x="4514" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0052" x="5078" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0053" x="5642" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0054" x="6206" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0055" x="6770" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0056" x="7334" y="1422" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0057" x="2" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0058" x="566" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0059" x="1130" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0060" x="1694" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0061" x="2258" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0062" x="2822" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0063" x="3386" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0064" x="3950" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0065" x="4514" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0066" x="5078" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0067" x="5642" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0068" x="6206" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0069" x="6770" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0070" x="7334" y="2132" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0071" x="2" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0072" x="566" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0073" x="1130" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0074" x="1694" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0075" x="2258" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0076" x="2822" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0077" x="3386" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0078" x="3950" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0079" x="4514" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0080" x="5078" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0081" x="5642" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0082" x="6206" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0083" x="6770" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0084" x="7334" y="2842" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0085" x="2" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0086" x="566" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0087" x="1130" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0088" x="1694" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0089" x="2258" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0090" x="1694" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0091" x="2258" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0092" x="1694" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0093" x="2258" y="3552" width="562" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0094" x="2822" y="3552" width="582" height="707" frameX="0" frameY="-2" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0095" x="3406" y="3552" width="589" height="708" frameX="0" frameY="-1" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0096" x="3997" y="3552" width="587" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0097" x="4586" y="3552" width="588" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0098" x="4586" y="3552" width="588" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0099" x="4586" y="3552" width="588" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0100" x="4586" y="3552" width="588" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0101" x="4586" y="3552" width="588" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0102" x="5176" y="3552" width="588" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0103" x="5176" y="3552" width="588" height="709" frameX="0" frameY="0" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0104" x="5766" y="3552" width="578" height="707" frameX="0" frameY="-2" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0105" x="6346" y="3552" width="570" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0106" x="6918" y="3552" width="564" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0107" x="7484" y="3552" width="544" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0108" x="2" y="4263" width="538" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0109" x="542" y="4263" width="529" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0110" x="1073" y="4263" width="524" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0111" x="1599" y="4263" width="529" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0112" x="1073" y="4263" width="524" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0113" x="1599" y="4263" width="529" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0114" x="1073" y="4263" width="524" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0115" x="1599" y="4263" width="529" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0116" x="1073" y="4263" width="524" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0117" x="1599" y="4263" width="529" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0118" x="1073" y="4263" width="524" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0119" x="1599" y="4263" width="529" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0120" x="1073" y="4263" width="524" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0121" x="2130" y="4263" width="524" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0122" x="2656" y="4263" width="528" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0123" x="3186" y="4263" width="530" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0124" x="3718" y="4263" width="535" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0125" x="4255" y="4263" width="536" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0126" x="4793" y="4263" width="536" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0127" x="5331" y="4263" width="536" height="705" frameX="0" frameY="-4" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0128" x="5869" y="4263" width="536" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0129" x="6407" y="4263" width="536" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0130" x="5869" y="4263" width="536" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Pull the bango0131" x="6407" y="4263" width="536" height="706" frameX="0" frameY="-3" frameWidth="728" frameHeight="709"/>
+	<SubTexture name="Right0000" x="6945" y="4263" width="373" height="702" frameX="-2" frameY="0" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0001" x="6945" y="4263" width="373" height="702" frameX="-2" frameY="0" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0002" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0003" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0004" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0005" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0006" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0007" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0008" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0009" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0010" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0011" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0012" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Right0013" x="7320" y="4263" width="372" height="700" frameX="0" frameY="-2" frameWidth="375" frameHeight="702"/>
+	<SubTexture name="Up0000" x="7694" y="4263" width="376" height="735"/>
+	<SubTexture name="Up0001" x="7694" y="4263" width="376" height="735"/>
+	<SubTexture name="Up0002" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0003" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0004" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0005" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0006" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0007" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0008" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0009" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0010" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0011" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0012" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+	<SubTexture name="Up0013" x="2" y="5000" width="376" height="728" frameX="0" frameY="-7" frameWidth="376" frameHeight="735"/>
+</TextureAtlas>

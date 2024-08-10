@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Bandy_Alt.png">
+	<!-- Created with Adobe Animate version 24.0.3.19 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Break banjo0000" x="2" y="2" width="445" height="704" frameX="-109" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0001" x="449" y="2" width="445" height="704" frameX="-109" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0002" x="896" y="2" width="446" height="704" frameX="-108" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0003" x="1344" y="2" width="448" height="704" frameX="-106" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0004" x="1794" y="2" width="449" height="704" frameX="-105" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0005" x="2245" y="2" width="450" height="704" frameX="-104" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0006" x="2697" y="2" width="450" height="704" frameX="-104" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0007" x="3149" y="2" width="451" height="704" frameX="-103" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0008" x="2697" y="2" width="450" height="704" frameX="-103" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0009" x="3149" y="2" width="451" height="704" frameX="-103" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0010" x="2697" y="2" width="450" height="704" frameX="-103" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0011" x="3602" y="2" width="460" height="704" frameX="-94" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0012" x="4064" y="2" width="458" height="704" frameX="-96" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0013" x="4524" y="2" width="459" height="704" frameX="-95" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0014" x="4985" y="2" width="459" height="704" frameX="-95" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0015" x="3602" y="2" width="460" height="704" frameX="-94" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0016" x="4985" y="2" width="459" height="704" frameX="-94" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0017" x="3602" y="2" width="460" height="704" frameX="-94" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0018" x="4985" y="2" width="459" height="704" frameX="-94" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0019" x="5446" y="2" width="459" height="704" frameX="-92" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0020" x="5907" y="2" width="471" height="704" frameX="-79" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0021" x="6380" y="2" width="489" height="704" frameX="-67" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0022" x="6871" y="2" width="495" height="704" frameX="-58" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0023" x="7368" y="2" width="510" height="704" frameX="-51" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0024" x="2" y="708" width="519" height="704" frameX="-45" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0025" x="523" y="708" width="519" height="704" frameX="-44" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0026" x="1044" y="708" width="519" height="704" frameX="-43" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0027" x="1565" y="708" width="518" height="704" frameX="-43" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0028" x="2085" y="708" width="518" height="704" frameX="-43" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0029" x="1565" y="708" width="518" height="704" frameX="-43" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0030" x="2085" y="708" width="518" height="704" frameX="-43" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0031" x="2605" y="708" width="519" height="704" frameX="-54" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0032" x="3126" y="708" width="518" height="704" frameX="-20" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0033" x="2605" y="708" width="519" height="704" frameX="-54" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0034" x="3126" y="708" width="518" height="704" frameX="-20" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0035" x="2605" y="708" width="519" height="704" frameX="-54" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0036" x="3646" y="708" width="519" height="704" frameX="-31" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0037" x="4167" y="708" width="519" height="704" frameX="-42" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0038" x="4688" y="708" width="558" height="704" frameX="-13" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0039" x="5248" y="708" width="579" height="704" frameX="-2" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0040" x="5829" y="708" width="584" height="704" frameX="0" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0041" x="6415" y="708" width="585" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0042" x="7002" y="708" width="585" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0043" x="6415" y="708" width="585" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0044" x="7002" y="708" width="585" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0045" x="6415" y="708" width="585" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0046" x="7002" y="708" width="585" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0047" x="7589" y="708" width="585" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0048" x="2" y="1414" width="590" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0049" x="594" y="1414" width="600" height="704" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0050" x="1196" y="1414" width="607" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0051" x="1805" y="1414" width="614" height="716" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0052" x="2421" y="1414" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0053" x="3037" y="1414" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0054" x="3653" y="1414" width="614" height="714" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0055" x="4269" y="1414" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0056" x="4885" y="1414" width="614" height="719" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0057" x="5501" y="1414" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0058" x="6117" y="1414" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0059" x="6733" y="1414" width="454" height="704" frameX="-24" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0060" x="7189" y="1414" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0061" x="7805" y="1414" width="314" height="704" frameX="-125" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0062" x="2" y="2136" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0063" x="618" y="2136" width="314" height="704" frameX="-125" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0064" x="934" y="2136" width="614" height="720" frameX="-1" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0065" x="1550" y="2136" width="328" height="704" frameX="-125" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0066" x="1880" y="2136" width="396" height="704" frameX="-124" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0067" x="2278" y="2136" width="459" height="704" frameX="-125" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0068" x="2739" y="2136" width="427" height="704" frameX="-124" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0069" x="3168" y="2136" width="404" height="704" frameX="-125" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0070" x="3574" y="2136" width="400" height="704" frameX="-124" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0071" x="3976" y="2136" width="396" height="704" frameX="-125" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0072" x="4374" y="2136" width="396" height="704" frameX="-124" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Break banjo0073" x="4772" y="2136" width="395" height="704" frameX="-125" frameY="0" frameWidth="615" frameHeight="720"/>
+	<SubTexture name="Down alt0000" x="5169" y="2136" width="454" height="703" frameX="0" frameY="-1" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0001" x="5625" y="2136" width="454" height="703" frameX="0" frameY="-1" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0002" x="6081" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0003" x="6528" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0004" x="6081" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0005" x="6528" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0006" x="6081" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0007" x="6528" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0008" x="6081" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0009" x="6528" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0010" x="6081" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0011" x="6528" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0012" x="6081" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Down alt0013" x="6528" y="2136" width="445" height="704" frameX="-4" frameY="0" frameWidth="454" frameHeight="704"/>
+	<SubTexture name="Idle Alt0000" x="6975" y="2136" width="434" height="697" frameX="-1" frameY="-7" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0001" x="7411" y="2136" width="434" height="697" frameX="-1" frameY="-7" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0002" x="2" y="2858" width="436" height="696" frameX="-4" frameY="-8" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0003" x="440" y="2858" width="436" height="696" frameX="-4" frameY="-8" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0004" x="878" y="2858" width="438" height="702" frameX="-3" frameY="-2" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0005" x="1318" y="2858" width="438" height="702" frameX="-3" frameY="-2" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0006" x="1758" y="2858" width="442" height="704" frameX="0" frameY="0" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0007" x="2202" y="2858" width="442" height="704" frameX="0" frameY="0" frameWidth="443" frameHeight="704"/>
+	<SubTexture name="Idle Alt0008" x="2646" y="2858" width="443" height="704"/>
+	<SubTexture name="Idle Alt0009" x="3091" y="2858" width="443" height="704"/>
+	<SubTexture name="Idle Alt0010" x="2646" y="2858" width="443" height="704"/>
+	<SubTexture name="Idle Alt0011" x="3091" y="2858" width="443" height="704"/>
+	<SubTexture name="Idle Alt0012" x="2646" y="2858" width="443" height="704"/>
+	<SubTexture name="Idle Alt0013" x="3091" y="2858" width="443" height="704"/>
+	<SubTexture name="Left Alt0000" x="3536" y="2858" width="394" height="704" frameX="0" frameY="0" frameWidth="399" frameHeight="704"/>
+	<SubTexture name="Left Alt0001" x="3932" y="2858" width="394" height="704" frameX="0" frameY="0" frameWidth="399" frameHeight="704"/>
+	<SubTexture name="Left Alt0002" x="4328" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0003" x="4729" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0004" x="4328" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0005" x="4729" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0006" x="4328" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0007" x="4729" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0008" x="4328" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0009" x="4729" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0010" x="4328" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0011" x="4729" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0012" x="4328" y="2858" width="399" height="704"/>
+	<SubTexture name="Left Alt0013" x="4729" y="2858" width="399" height="704"/>
+	<SubTexture name="Right Alt0000" x="5130" y="2858" width="456" height="705" frameX="-7" frameY="0" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0001" x="5588" y="2858" width="456" height="705" frameX="-7" frameY="0" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0002" x="6046" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0003" x="6503" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0004" x="6046" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0005" x="6503" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0006" x="6046" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0007" x="6503" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0008" x="6046" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0009" x="6503" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0010" x="6046" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0011" x="6503" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0012" x="6046" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Right Alt0013" x="6503" y="2858" width="455" height="704" frameX="0" frameY="-1" frameWidth="463" frameHeight="705"/>
+	<SubTexture name="Up alt0000" x="6960" y="2858" width="437" height="706" frameX="-3" frameY="0" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0001" x="7399" y="2858" width="437" height="706" frameX="-3" frameY="0" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0002" x="2" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0003" x="449" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0004" x="2" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0005" x="449" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0006" x="2" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0007" x="449" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0008" x="2" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0009" x="449" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0010" x="2" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0011" x="449" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0012" x="2" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+	<SubTexture name="Up alt0013" x="449" y="3566" width="445" height="704" frameX="0" frameY="-2" frameWidth="445" frameHeight="706"/>
+</TextureAtlas>
