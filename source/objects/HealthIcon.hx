@@ -6,6 +6,8 @@ typedef HealthFile =
 {
 	var colors:Array<Int>;
 	var antialiasing:Bool;
+
+	@:optional var editor_isPlayer:Null<Bool>;
 }
 
 class HealthIcon extends FlxSprite
@@ -51,9 +53,9 @@ class HealthIcon extends FlxSprite
 			if(!Paths.fileExists('images/' + name + '.png', IMAGE)) name = 'icons/face';
 
 			#if MODS_ALLOWED
-			healthFile = Json.parse(File.getContent(Paths.getSharedPath('images/$name.json')));
+			healthFile = cast Json.parse(File.getContent(Paths.getSharedPath('images/$name.json')));
 			#else
-			healthFile = Json.parse(Assets.getText(Paths.getSharedPath('images/$name.json')));
+			healthFile = cast Json.parse(Assets.getText(Paths.getSharedPath('images/$name.json')));
 			#end
 
 			var graphic = Paths.image(name, allowGPU);

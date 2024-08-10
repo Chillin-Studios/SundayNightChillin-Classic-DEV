@@ -41,7 +41,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			option.onChange = onChangeNoteSkin;
 			noteOptionID = optionsArray.length - 1;
 		}
-		
+
 		var noteSplashes:Array<String> = Mods.mergeAllTextsNamed('images/noteSplashes/list.txt');
 		if(noteSplashes.length > 0)
 		{
@@ -68,12 +68,30 @@ class VisualsUISubState extends BaseOptionsMenu
 		option.decimals = 1;
 		addOption(option);
 
+		var option:Option = new Option('Note Sustain Opacity',
+			'How much transparent should the Note Sustains be.',
+			'sustainAlpha',
+			'percent');
+		option.scrollSpeed = 1.6;
+		option.minValue = 0.0;
+		option.maxValue = 1;
+		option.changeValue = 0.1;
+		option.decimals = 1;
+		addOption(option);
+
 		var option:Option = new Option('Hide HUD',
 			'If checked, hides most HUD elements.',
 			'hideHud',
 			'bool');
 		addOption(option);
-		
+
+		var option:Option = new Option('Hud Type:',
+			"What type of HUD do you prefer?\nFunkin = Score Only\nPsych = Default\nChillin = Chillin Engine Extra Hud Elements (Shameless self promo) (ALSO PERFORMANCE WARNING!)",
+			'hudType',
+			'string',
+			['Funkin', 'Psych', 'Chillin']);
+		addOption(option);
+
 		var option:Option = new Option('Time Bar:',
 			"What should the Time Bar display?",
 			'timeBarType',
@@ -124,7 +142,7 @@ class VisualsUISubState extends BaseOptionsMenu
 		addOption(option);
 		option.onChange = onChangeFPSCounter;
 		#end
-		
+
 		var option:Option = new Option('Pause Screen Song:',
 			"What song do you prefer for the Pause Screen?",
 			'pauseMusic',
@@ -132,7 +150,7 @@ class VisualsUISubState extends BaseOptionsMenu
 			['None', 'Breakfast']);
 		addOption(option);
 		option.onChange = onChangePauseMusic;
-		
+
 		#if CHECK_FOR_UPDATES
 		var option:Option = new Option('Check for Updates',
 			'On Release builds, turn this on to check for updates when you start the game.',

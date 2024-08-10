@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="box.png">
+	<!-- Manually made by CrusherNotDrip -->
+	<SubTexture name="Idle0000" x="0" y="0" width="300" height="85" />
+    <SubTexture name="Idle0001" x="300" y="0" width="303" height="87" />
+</TextureAtlas>

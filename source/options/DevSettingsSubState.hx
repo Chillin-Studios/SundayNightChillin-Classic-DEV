@@ -14,9 +14,9 @@ class DevSettingsSubState extends BaseOptionsMenu
 			'bool');
 		addOption(option);
 
-        var option:Option = new Option('Outdated Warning',
-			'If checked, the outdated warning will show up. (Only if the build version doesn\'t match with the one from the public GitHub.)',
-			'outdatedWarning',
+		var option:Option = new Option('Health Drain',
+			'If checked, Enables health drain on certain songs that have it (Anger Issues and Spitting Facts).',
+			'healthDrain',
 			'bool');
 		addOption(option);
 

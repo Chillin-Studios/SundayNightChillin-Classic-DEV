@@ -1737,9 +1737,11 @@ class ChartingState extends MusicBeatState
 				changeSection(curSec - 1, false);
 			}
 		}
+
+		#if FLX_DEBUG
 		FlxG.watch.addQuick('daBeat', curBeat);
 		FlxG.watch.addQuick('daStep', curStep);
-
+		#end
 
 		if (FlxG.mouse.x > gridBG.x
 			&& FlxG.mouse.x < gridBG.x + gridBG.width

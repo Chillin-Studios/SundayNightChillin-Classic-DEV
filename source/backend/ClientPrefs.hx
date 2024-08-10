@@ -15,6 +15,7 @@ import flixel.input.gamepad.FlxGamepadInputID;
 	public var noteSkin:String = 'Default';
 	public var splashSkin:String = 'Psych';
 	public var splashAlpha:Float = 0.6;
+	public var sustainAlpha:Float = 0.6;
 	public var lowQuality:Bool = false;
 	public var shaders:Bool = true;
 	public var cacheOnGPU:Bool = #if !switch false #else true #end;
@@ -34,6 +35,7 @@ import flixel.input.gamepad.FlxGamepadInputID;
 		[0xFFFF884E, 0xFFFFFAF5, 0xFF6C0000]];
 
 	public var ghostTapping:Bool = true;
+	public var hudType:String = 'Psych';
 	public var timeBarType:String = 'Time Left';
 	public var scoreZoom:Bool = true;
 	public var noReset:Bool = false;
@@ -45,7 +47,7 @@ import flixel.input.gamepad.FlxGamepadInputID;
 	public var opponentNoteColors:Bool = true;
 	public var gameplaySettings:Map<String, Dynamic> = [
 		'scrollspeed' => 1.0,
-		'scrolltype' => 'multiplicative', 
+		'scrolltype' => 'multiplicative',
 		'songspeed' => 1.0,
 		'healthgain' => 1.0,
 		'healthloss' => 1.0,
@@ -67,7 +69,7 @@ import flixel.input.gamepad.FlxGamepadInputID;
 	#if SNC_DEV_BUILD
 	// Developer Options
 	public var chartBlocks:Bool = false;
-	public var outdatedWarning:Bool = false;
+	public var healthDrain:Bool = false;
 	public var spittingFactsMechanics:Bool = false;
 	#end
 }
@@ -166,7 +168,7 @@ class ClientPrefs {
 		for (key in Reflect.fields(data))
 			if (key != 'gameplaySettings' && Reflect.hasField(FlxG.save.data, key))
 				Reflect.setField(data, key, Reflect.field(FlxG.save.data, key));
-		
+
 		if(Main.fpsVar != null)
 			Main.fpsVar.visible = data.showFPS;
 

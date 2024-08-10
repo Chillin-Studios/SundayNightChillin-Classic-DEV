@@ -17,7 +17,7 @@ class DiscordClient
 		if(ClientPrefs.data.discordRPC) initialize();
 		else if(isInitialized) shutdown();
 	}
-	
+
 	public static function prepare()
 	{
 		if (!isInitialized && ClientPrefs.data.discordRPC)
@@ -32,7 +32,7 @@ class DiscordClient
 		Discord.Shutdown();
 		isInitialized = false;
 	}
-	
+
 	private static function onReady(request:cpp.RawConstPointer<DiscordUser>):Void {
 		var requestPtr:cpp.Star<DiscordUser> = cpp.ConstPointer.fromRaw(request).ptr;
 
@@ -72,7 +72,7 @@ class DiscordClient
 				#end
 				Discord.RunCallbacks();
 
-				Sys.sleep(0.5);
+				Sys.sleep(2);
 			}
 		});
 		isInitialized = true;
@@ -96,7 +96,7 @@ class DiscordClient
 
 	public static function updatePresence()
 		Discord.UpdatePresence(cpp.RawConstPointer.addressOf(presence));
-	
+
 	public static function resetClientID()
 		clientID = _defaultID;
 

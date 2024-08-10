@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="boombox.png">
+	<!-- Manually made by CrusherNotDrip -->
+	<SubTexture name="Idle0000" x="0" y="0" width="144" height="97" />
+    <SubTexture name="Idle0001" x="144" y="0" width="143" height="97" frameX="-2" frameY="0" frameWidth="143" frameHeight="97" />
+</TextureAtlas>

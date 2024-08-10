@@ -116,7 +116,9 @@ class GBStage extends BaseStage
 		{
 			secondsUntilStrike -= elapsed;
 
+			#if FLX_DEBUG
 			FlxG.watch.addQuick('strikeShit', secondsUntilStrike);
+			#end
 
 			if(secondsUntilStrike <= 0)
 			{
@@ -314,7 +316,9 @@ class GBStage extends BaseStage
 			insert(members.indexOf(ground), lightning);
 			lightning.alpha = 0;
 
+			#if FLX_DEBUG
 			FlxG.debugger.track(lightning);
+			#end
 		}
 	}
 

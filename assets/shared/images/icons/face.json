@@ -1,8 +1,10 @@
 {
     "colors": [
-        165,
-        165,
-        165
+		161,
+		161,
+		161
     ],
-    "antialiasing": true
+    "antialiasing": true,
+
+    "editor_isPlayer": false
 }

@@ -4,5 +4,7 @@
         176,
         209
     ],
-    "antialiasing": false
+    "antialiasing": false,
+
+    "editor_isPlayer": true
 }

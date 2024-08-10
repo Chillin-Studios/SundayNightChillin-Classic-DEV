@@ -402,7 +402,7 @@ class TitleState extends MusicBeatState
 						kids.videoSprite.play();
 					} else
 					#end
-					if (mustUpdate #if SNC_DEV_BUILD && ClientPrefs.data.outdatedWarning #end) {
+					if (mustUpdate) {
 						MusicBeatState.switchState(new OutdatedState());
 					} else {
 						MusicBeatState.switchState(new MainMenuState());

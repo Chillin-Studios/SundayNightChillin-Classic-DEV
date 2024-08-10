@@ -172,7 +172,8 @@ class PlayState extends MusicBeatState
 	private var curSong:String = "";
 
 	public var gfSpeed:Int = 1;
-	public var health(default, set):Float = 1;
+	public var health:Float = 1;
+	public var healthLerp(default, set):Float = 1;
 	public var combo:Int = 0;
 
 	public var healthBar:Bar;
@@ -224,6 +225,8 @@ class PlayState extends MusicBeatState
 
 	public var defaultCamZoom:Float = 1.05;
 
+	var stageZoomTween:FlxTween;
+
 	public static var daPixelZoom:Float = 6;
 	private var singAnimations:Array<String> = ['singLEFT', 'singDOWN', 'singUP', 'singRIGHT'];
 
@@ -254,8 +257,6 @@ class PlayState extends MusicBeatState
 
 	public var startCallback:Void->Void = null;
 	public var endCallback:Void->Void = null;
-
-	private var stageZoomTween:FlxTween;
 
 	override public function create()
 	{
@@ -555,7 +556,7 @@ class PlayState extends MusicBeatState
 		FlxG.worldBounds.set(0, 0, FlxG.width, FlxG.height);
 		moveCameraSection();
 
-		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'healthBar', function() return health, 0, 2);
+		healthBar = new Bar(0, FlxG.height * (!ClientPrefs.data.downScroll ? 0.89 : 0.11), 'healthBar', function() return healthLerp, 0, 2);
 		healthBar.screenCenter(X);
 		healthBar.leftToRight = false;
 		healthBar.scrollFactor.set();
@@ -578,8 +579,9 @@ class PlayState extends MusicBeatState
 		healthOppTxt = new FlxText((-healthBar.x + -healthBar.width) + -50, 0, FlxG.width, "", 16);
 		healthOppTxt.y = healthBar.y + (healthBar.height - healthOppTxt.height) / 2;
 		healthOppTxt.setFormat(textFont, 16, 0xFFFF0000, RIGHT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (health * 50), 2)}%]';
-		healthOppTxt.visible = !ClientPrefs.data.hideHud;
+		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (healthLerp * 50), 2)}%]';
+		healthOppTxt.visible = (!ClientPrefs.data.hideHud && ClientPrefs.data.hudType == 'Chillin');
+		healthOppTxt.alpha = ClientPrefs.data.healthBarAlpha;
 		healthOppTxt.scrollFactor.set();
 		healthOppTxt.borderSize = 2;
 		uiGroup.add(healthOppTxt);
@@ -587,8 +589,9 @@ class PlayState extends MusicBeatState
 		healthPlayerTxt = new FlxText((healthBar.x + healthBar.width) + 50, 0, FlxG.width, "", 16);
 		healthPlayerTxt.y = healthBar.y + (healthBar.height - healthPlayerTxt.height) / 2;
 		healthPlayerTxt.setFormat(textFont, 16, 0xFF66FF33, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(health * 50, 2)}%]';
-		healthPlayerTxt.visible = !ClientPrefs.data.hideHud;
+		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(healthLerp * 50, 2)}%]';
+		healthPlayerTxt.visible = (!ClientPrefs.data.hideHud && ClientPrefs.data.hudType == 'Chillin');
+		healthPlayerTxt.alpha = ClientPrefs.data.healthBarAlpha;
 		healthPlayerTxt.scrollFactor.set();
 		healthPlayerTxt.borderSize = 2;
 		uiGroup.add(healthPlayerTxt);
@@ -1091,7 +1094,7 @@ class PlayState extends MusicBeatState
 				});
 
 				var tick:Countdown = null;
-				
+
 				switch(swagCounter)
 				{
 					case 0:
@@ -1221,19 +1224,24 @@ class PlayState extends MusicBeatState
 		if (ret == LuaUtils.Function_Stop)
 			return;
 
-		var str:String = ratingName;
-		if(totalPlayed != 0)
+		var str:String = '';
+
+		if (ClientPrefs.data.hudType != 'Funkin')
 		{
-			var percent:Float = CoolUtil.floorDecimal(ratingPercent * 100, 2);
-			str += ' (${percent}%) - ${ratingFC}';
+			str = ratingName;
+			if(totalPlayed != 0)
+			{
+				var percent:Float = CoolUtil.floorDecimal(ratingPercent * 100, 2);
+				str += ' (${percent}%) - ${ratingFC}';
+			}
 		}
 
 		var tempScore:String = 'Score: ${songScore}'
-		+ (!instakillOnMiss ? ' | Misses: ${songMisses}' : "")
-		+ ' | Rating: ${str}';
+		+ ((ClientPrefs.data.hudType != 'Funkin') ? (!instakillOnMiss ? ' | Misses: ${songMisses}' : "")
+		+ ' | Rating: ${str}' : '');
 		scoreTxt.text = '${tempScore}\n';
 
-		if (!miss && !cpuControlled)
+		if (!miss && !cpuControlled && ClientPrefs.data.hudType != 'Funkin')
 			doScoreBop();
 
 		callOnScripts('onUpdateScore', [miss]);
@@ -1810,9 +1818,13 @@ class PlayState extends MusicBeatState
 
 		camHUD.alpha = FlxMath.lerp(camHUDAlphaLerp, camHUD.alpha, Math.exp(-elapsed * 3.125 * playbackRate));
 
+		#if FLX_DEBUG
 		FlxG.watch.addQuick("secShit", curSection);
 		FlxG.watch.addQuick("beatShit", curBeat);
 		FlxG.watch.addQuick("stepShit", curStep);
+		#end
+
+		healthLerp = FlxMath.lerp(healthLerp, health, 0.15 * playbackRate);
 
 		if (!ClientPrefs.data.noReset && controls.RESET && canReset && !inCutscene && startedCountdown && !endingSong)
 		{
@@ -1970,25 +1982,25 @@ class PlayState extends MusicBeatState
 	}
 
 	var iconsAnimations:Bool = true;
-	function set_health(value:Float):Float
+	function set_healthLerp(value:Float):Float
 	{
 		if(!iconsAnimations || healthBar == null || !healthBar.enabled || healthBar.valueFunction == null)
 		{
-			health = value;
-			return health;
+			healthLerp = value;
+			return healthLerp;
 		}
 
-		health = value;
+		healthLerp = value;
 		var newPercent:Null<Float> = FlxMath.remapToRange(FlxMath.bound(healthBar.valueFunction(), healthBar.bounds.min, healthBar.bounds.max), healthBar.bounds.min, healthBar.bounds.max, 0, 100);
 		healthBar.percent = (newPercent != null ? newPercent : 0);
 
 		iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
 		iconP2.animation.curAnim.curFrame = (healthBar.percent > 80) ? 1 : 0;
 
-		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(health * 50, 2)}%]';
-		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (health * 50), 2)}%]';
+		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(healthLerp * 50, 2)}%]';
+		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (healthLerp * 50), 2)}%]';
 
-		return health;
+		return healthLerp;
 	}
 
 	function openPauseMenu()
@@ -3066,7 +3078,7 @@ class PlayState extends MusicBeatState
 		var result:Dynamic = callOnLuas('opponentNoteHit', [notes.members.indexOf(note), Math.abs(note.noteData), note.noteType, note.isSustainNote]);
 		if(result != LuaUtils.Function_Stop && result != LuaUtils.Function_StopHScript && result != LuaUtils.Function_StopAll) callOnHScript('opponentNoteHit', [note]);
 
-		if (songName == 'anger-issues' && curSection >= 32)
+		if (songName == 'anger-issues' && curSection >= 32 #if SNC_DEV_BUILD && ClientPrefs.data.healthDrain #end)
 		{
 			if (health - 0.017 * healthGain >= 0)
 				health -= 0.017 * healthGain;
@@ -3074,7 +3086,7 @@ class PlayState extends MusicBeatState
 				health = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001;
 		}
 
-		if (songName == 'spitting-facts' && !note.isSustainNote)
+		if (songName == 'spitting-facts' && !note.isSustainNote #if SNC_DEV_BUILD && ClientPrefs.data.healthDrain #end)
 			health -= 0.004;
 
 		if (!note.isSustainNote)
