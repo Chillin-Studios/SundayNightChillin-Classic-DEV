@@ -1,7 +1,7 @@
 tutorial
 gbWeek
 jokegbWeek
-pozoWeek
+bozoWeek
 extras
 gbOldWeek
 chillinVersions

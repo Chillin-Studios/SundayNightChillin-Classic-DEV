@@ -15,13 +15,13 @@
         "",
         ""
     ],
-    "weekBackground": "bandy",
+    "weekBackground": "",
     "weekBefore": "",
     "storyName": "my loves boobies",
     "weekName": "Extras",
     "startUnlocked": true,
     "hiddenUntilUnlocked": false,
-    "hideStoryMode": false,
+    "hideStoryMode": true,
     "hideFreeplay": false,
     "difficulties": "Chillin",
     "album": "extra"

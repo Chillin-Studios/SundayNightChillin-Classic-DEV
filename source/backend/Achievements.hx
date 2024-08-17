@@ -29,6 +29,10 @@ class Achievements {
 		createAchievement('gbWeek_complete',		{name: "Congratulations!", description: "Beat the GB Week."});
 		createAchievement('gbWeek_nomiss',			{name: "Screw you!", description: "Beat GB Week with no Misses."});
 		createAchievement('jokegb',					{name: "Told you it was easy", description: "Beat the \"Joke GB\" song after trying to access the Anger Issues chart.", hidden: true});
+		createAchievement('bozoWeek_complete',		{name: 'idk', description: "Beat the Bozo Week."});
+		createAchievement('bozoWeek_nomiss',		{name: 'idk', description: "Beat Bozo Week with no Misses."});
+		createAchievement('shadEWeek_complete',		{name: 'idk', description: "Beat the ShadE Week."});
+		createAchievement('shadEWeek_nomiss',		{name: 'idk', description: "Beat ShadE Week with no Misses."});
 		createAchievement('funny_death',			{name: "Fucking Stupid", description: "Kill yourself at 97-100% health.", hidden: true});
 		createAchievement('toastie',				{name: "Toaster Gamer", description: "Have you tried to run the game on a toaster?"});
 
