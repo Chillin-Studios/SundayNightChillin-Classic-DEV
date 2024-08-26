@@ -3,10 +3,10 @@ package backend;
 class Difficulty
 {
 	public static var defaultList(default, never):Array<String> = [
-		'Chillin'
+		'Chillin\''
 	];
 	public static var list:Array<String> = [];
-	private static var defaultDifficulty(default, never):String = 'Chillin';
+	private static var defaultDifficulty(default, never):String = 'Chillin\'';
 
 	inline public static function getFilePath(num:Null<Int> = null)
 	{
