@@ -172,7 +172,7 @@ class PlayState extends MusicBeatState
 	private var curSong:String = "";
 
 	public var gfSpeed:Int = 1;
-	public var health:Float = 1;
+	public var health(default, set):Float = 1;
 	public var healthLerp(default, set):Float = 1;
 	public var combo:Int = 0;
 
@@ -1757,23 +1757,24 @@ class PlayState extends MusicBeatState
 			{
 				if (controls.justPressed('debug_1'))
 				{
-					#if SNC_DEV_BUILD
 					if (ClientPrefs.data.chartBlocks && (songName == 'anger-issues' || songName == 'spitting-facts'))
 						loadSpittingFacts();
 					else
-					#end
 						openChartEditor();
 				}
 				else if (controls.justPressed('debug_2'))
 					openCharacterEditor();
 			}
-		}
 
-		if (FlxG.keys.justPressed.NINE)
-		{
-			iconP1.switchOldIcon(boyfriend.healthIcon);
-			iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
-			reloadHealthBarColors();
+			if (FlxG.keys.justPressed.NINE)
+			{
+				iconP1.switchOldIcon(boyfriend.healthIcon);
+				iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
+				reloadHealthBarColors();
+			}
+
+			if (FlxG.keys.justPressed.FIVE && (songName == 'deestroyer'))
+				loadSecretSong('in-the-balls', 'in-the-balls');
 		}
 
 		if (healthBar.bounds.max != null && health > healthBar.bounds.max)
@@ -1923,7 +1924,7 @@ class PlayState extends MusicBeatState
 				KillNotes();
 				FlxG.sound.music.onComplete();
 			}
-			if(FlxG.keys.justPressed.PAGEUP) {
+			if(FlxG.keys.justPressed.TWO) {
 				setSongTime(Conductor.songPosition + 10000);
 				clearNotesBefore(Conductor.songPosition);
 			}
@@ -1944,21 +1945,24 @@ class PlayState extends MusicBeatState
 	public static function loadSpittingFacts():Void
 	{
 		if (Paths.formatToSongPath(SONG.song) == 'spitting-facts')
-		{
 			SystemUtil.tweenClose();
-			return;
-		}
+		else
+			loadSecretSong('spitting-facts', 'jokegbWeek');
+	}
 
-		storyPlaylist = ['spitting-facts'];
-		SONG = Song.loadFromJson('spitting-facts', 'spitting-facts');
+	public static function loadSecretSong(song:String, week:String)
+	{
+		storyPlaylist = [song];
+		SONG = Song.loadFromJson(song, song);
 		isStoryMode = false;
 		campaignScore = 0;
 		campaignMisses = 0;
 		storyDifficulty = 1;
 		deathCounter = 0;
 		seenCutscene = false;
-		storyWeek = WeekData.weeksList.indexOf('jokegbWeek');
+		storyWeek = WeekData.weeksList.indexOf(week);
 		FlxTransitionableState.skipNextTransIn = true;
+		FlxTransitionableState.skipNextTransOut = true;
 		LoadingState.loadAndSwitchState(new PlayState(), true);
 		Difficulty.loadFromWeek();
 	}
@@ -1997,10 +2001,15 @@ class PlayState extends MusicBeatState
 		iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
 		iconP2.animation.curAnim.curFrame = (healthBar.percent > 80) ? 1 : 0;
 
-		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(healthLerp * 50, 2)}%]';
-		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (healthLerp * 50), 2)}%]';
-
 		return healthLerp;
+	}
+
+	function set_health(value:Float):Float
+	{
+		health = value;
+		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(health * 50, 2)}%]';
+		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (health * 50), 2)}%]';
+		return health;
 	}
 
 	function openPauseMenu()
@@ -2367,7 +2376,10 @@ class PlayState extends MusicBeatState
 					var dadPos:Float = (dad.getMidpoint().x + 150) + (dad.cameraPosition[0] + opponentCameraOffset[0]);
 					var bfPos:Float = (boyfriend.getMidpoint().x - 100) + (boyfriend.cameraPosition[0] - boyfriendCameraOffset[0]);
 
-					camFollow.x = (dadPos + bfPos) / 2.5;
+					if (flValue1 != null)
+						flValue1 = 0.5;
+
+					camFollow.x = gf.getMidpoint().x; // this works ig
 
 					if (flValue2 != null)
 						camFollow.y = flValue2;
@@ -2566,13 +2578,13 @@ class PlayState extends MusicBeatState
 				Mods.loadTopMod();
 				#if DISCORD_ALLOWED DiscordClient.resetClientID(); #end
 
-				if (songName == 'spitting-facts' && !ClientPrefs.getGameplaySetting('practice') && !ClientPrefs.getGameplaySetting('botplay'))
+				if (['spitting-facts', 'in-the-balls'].contains(songName) && !ClientPrefs.getGameplaySetting('practice') && !ClientPrefs.getGameplaySetting('botplay'))
 				{
 					StoryMenuState.weekCompleted.set(WeekData.weeksList[storyWeek], true);
 					Highscore.saveWeekScore(WeekData.getWeekFileName(), campaignScore, storyDifficulty);
 
 					FlxG.save.data.weekCompleted = StoryMenuState.weekCompleted;
-					FlxG.save.flush();
+					FlxG.save.flush();  
 				}
 
 				MusicBeatState.switchState(new FreeplaySelector());

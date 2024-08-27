@@ -80,7 +80,7 @@ class ChartingState extends MusicBeatState
 		['Set Property', "Value 1: Variable name\nValue 2: New value"],
 		['Play Sound', "Value 1: Sound file name\nValue 2: Volume (Default: 1), ranges from 0 to 1"],
 		['Countdown', "Shows the Countdown Sprite\nValue 1: which tick to play\nValue 2: If the sound should play"],
-		['Duet Camera', "Positions the camera to be inbetween the opponent and player.\nValue 1: Should it go back to the regular position?\nValue 2: What should the Y position be?"]
+		['Duet Camera', "Positions the camera to be at the middle of gf.\nValue 1: Should it go back to the regular position?\nValue 2: What should the Y position be?"]
 	];
 
 	var _file:FileReference;
