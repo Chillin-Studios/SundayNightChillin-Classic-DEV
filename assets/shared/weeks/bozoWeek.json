@@ -1,13 +1,24 @@
 {
     "songs": [
         [
+            "Lame",
+            "bozo",
+            [
+                206,
+				77,
+				63
+            ],
+			"volume2"
+        ],
+        [
             "Deestroyer",
             "dees",
             [
                 82,
 				154,
 				149
-            ]
+            ],
+			"volume2"
         ]
     ],
     "weekCharacters": [
@@ -15,7 +26,7 @@
         "",
         ""
     ],
-    "weekBackground": "pozo",
+    "weekBackground": "bozo",
     "weekBefore": "gbWeek",
     "storyName": "Week Bozo",
     "weekName": "Week Bozo",

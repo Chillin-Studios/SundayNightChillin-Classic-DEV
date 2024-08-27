@@ -52,6 +52,9 @@ class FreeplayState extends MusicBeatState
 
 	var player:MusicPlayer;
 
+	var curVolume:String;
+	var volumeSpr:FlxSprite;
+
 	public function new(curAlbum:String)
 	{
 		this.curAlbum = curAlbum;
@@ -91,7 +94,9 @@ class FreeplayState extends MusicBeatState
 				{
 					colors = [146, 113, 253];
 				}
-				addSong(song[0], i, song[1], FlxColor.fromRGB(colors[0], colors[1], colors[2]));
+				addSong(song[0], i, song[1], FlxColor.fromRGB(colors[0], colors[1], colors[2]), song[3]);
+
+				Paths.image('freeplay/volumes/' + song[3]); // precache
 			}
 		}
 		Mods.loadTopMod();
@@ -138,6 +143,9 @@ class FreeplayState extends MusicBeatState
 			add(icon);
 		}
 		WeekData.setDirectoryFromWeek();
+
+		volumeSpr = new FlxSprite();
+		add(volumeSpr);
 
 		scoreText = new FlxText(FlxG.width * 0.7, 5, 0, "", 32);
 		scoreText.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, RIGHT);
@@ -196,9 +204,9 @@ class FreeplayState extends MusicBeatState
 		super.closeSubState();
 	}
 
-	public function addSong(songName:String, weekNum:Int, songCharacter:String, color:Int)
+	public function addSong(songName:String, weekNum:Int, songCharacter:String, color:Int, volume:String)
 	{
-		songs.push(new SongMetadata(songName, weekNum, songCharacter, color));
+		songs.push(new SongMetadata(songName, weekNum, songCharacter, color, volume));
 	}
 
 	function weekIsLocked(name:String):Bool {
@@ -555,6 +563,7 @@ class FreeplayState extends MusicBeatState
 		else
 			curDifficulty = 0;
 
+		changeVolume();
 		changeDiff();
 		_updateSongLastDifficulty();
 	}
@@ -611,6 +620,35 @@ class FreeplayState extends MusicBeatState
 		if (!FlxG.sound.music.playing)
 			FlxG.sound.playMusic(Paths.music('sncTitle'));
 	}
+
+	public var volumeTween:FlxTween;
+	public function changeVolume():Void
+	{
+		var newVolume:String = songs[curSelected].volume;
+
+		if(curVolume != newVolume)
+		{
+			volumeSpr.loadGraphic(Paths.image('freeplay/volumes/' + newVolume));
+			volumeSpr.setGraphicSize(Std.int(volumeSpr.width * 0.3));
+			volumeSpr.updateHitbox();
+			
+			volumeSpr.x = FlxG.width - volumeSpr.width - 30;
+			volumeSpr.y = FlxG.height - volumeSpr.height - 30;
+
+			if(volumeTween != null)
+				volumeTween.cancel();
+	
+			volumeSpr.y -= 20;
+			volumeTween = FlxTween.tween(volumeSpr, {y: volumeSpr.y + 20}, 0.3, {
+				ease: FlxEase.cubeOut,
+				onComplete: function(twn:FlxTween) {
+					volumeTween = null;
+				}
+			});
+		}
+
+		curVolume = newVolume;
+	}
 }
 
 class SongMetadata
@@ -620,9 +658,10 @@ class SongMetadata
 	public var songCharacter:String = "";
 	public var color:Int = -7179779;
 	public var folder:String = "";
+	public var volume:String = "";
 	public var lastDifficulty:String = null;
 
-	public function new(song:String, week:Int, songCharacter:String, color:Int)
+	public function new(song:String, week:Int, songCharacter:String, color:Int, volume:String)
 	{
 		this.songName = song;
 		this.week = week;
@@ -630,5 +669,7 @@ class SongMetadata
 		this.color = color;
 		this.folder = Mods.currentModDirectory;
 		if(this.folder == null) this.folder = '';
+		this.volume = volume;
+		if(this.volume == null) this.volume = 'volume1';
 	}
 }
