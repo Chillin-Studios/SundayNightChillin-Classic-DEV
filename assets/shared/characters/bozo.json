@@ -1,59 +1,59 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
-			"anim": "idle",
+			"loop": false,
 			"fps": 24,
-			"name": "bozo idle",
-			"indices": []
+			"anim": "idle",
+			"indices": [],
+			"name": "bozo idle"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				89,
 				-8
 			],
-			"anim": "singLEFT",
+			"loop": false,
 			"fps": 24,
-			"name": "bozo left",
-			"indices": []
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "bozo left"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-99,
 				-96
 			],
-			"anim": "singDOWN",
+			"loop": false,
 			"fps": 24,
-			"name": "bozo down",
-			"indices": []
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "bozo down"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				49,
 				58
 			],
-			"anim": "singUP",
+			"loop": false,
 			"fps": 24,
-			"name": "bozo up",
-			"indices": []
+			"anim": "singUP",
+			"indices": [],
+			"name": "bozo up"
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-117,
 				-1
 			],
-			"anim": "singRIGHT",
+			"loop": false,
 			"fps": 24,
-			"name": "bozo right",
-			"indices": []
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "bozo right"
 		}
 	],
 	"vocals_file": "",
@@ -65,19 +65,8 @@
 	],
 	"healthicon": "bozo",
 	"flip_x": false,
-	"note_colors": [
-		["FE0008", "FFFFFF", "651038"],
-		["585858", "FFFFFF", "242424"],
-		["FE0008", "FFFFFF", "651038"],
-		["585858", "FFFFFF", "242424"]
-	],
-	"healthbar_colors": [
-		206,
-		77,
-		63
-	],
 	"camera_position": [
-		-50,
+		0,
 		0
 	],
 	"sing_duration": 6.1,

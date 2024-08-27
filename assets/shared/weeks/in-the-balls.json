@@ -1,0 +1,29 @@
+{
+	"songs": [
+		[
+			"In the Balls",
+			"ball",
+			[
+				235,
+				0,
+				0
+			],
+			"volume2"
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"weekBackground": "",
+	"weekBefore": "in-the-balls",
+	"storyName": "Grassy Plains",
+	"weekName": "GB Week",
+	"startUnlocked": false,
+	"hiddenUntilUnlocked": true,
+	"hideStoryMode": false,
+	"hideFreeplay": false,
+	"difficulties": "Chillin'",
+	"album": "part2"
+}

@@ -2,6 +2,7 @@ tutorial
 gbWeek
 jokegbWeek
 bozoWeek
+in-the-balls
 extras
 gbOldWeek
 chillinVersions
