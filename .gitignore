@@ -27,3 +27,6 @@ art/build_html-debug.bat
 ### SNC-Specific
 unused_secret/
 leak/
+
+### FL Studio Things
+*.zpa
