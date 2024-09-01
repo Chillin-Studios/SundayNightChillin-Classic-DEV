@@ -181,11 +181,6 @@ class Paths
 		return sound;
 	}
 
-	public static function soundStr(key:String, ?library:String):String
-	{
-		return getPath('sounds/$key.$SOUND_EXT', SOUND, library, true);
-	}
-
 	inline static public function soundRandom(key:String, min:Int, max:Int, ?library:String)
 	{
 		return sound(key + FlxG.random.int(min, max), library);

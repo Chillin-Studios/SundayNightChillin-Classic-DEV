@@ -1,12 +1,9 @@
 package debug;
 
 import flixel.system.ui.FlxSoundTray;
-import flixel.tweens.FlxTween;
-import flixel.system.FlxAssets;
-import flixel.tweens.FlxEase;
 import openfl.display.Bitmap;
-import openfl.display.BitmapData;
 import openfl.utils.Assets;
+import openfl.media.Sound;
 
 /**
  *  Extends the default flixel soundtray, but with some art
@@ -21,12 +18,12 @@ class FunkinSoundTray extends FlxSoundTray
 	var lerpYPos:Float = 0;
 	var alphaTarget:Float = 0;
 
-	var volumeMaxSound:String;
+	var volumeUp:Sound = null;
+	var volumeDown:Sound = null;
+	var volumeMax:Sound = null;
 
 	public function new()
 	{
-		// calls super, then removes all children to add our own
-		// graphics
 		super();
 		removeChildren();
 
@@ -38,7 +35,6 @@ class FunkinSoundTray extends FlxSoundTray
 		y = -height;
 		visible = false;
 
-		// makes an alpha'd version of all the bars (bar_10.png)
 		var backingBar:Bitmap = new Bitmap(Assets.getBitmapData(Paths.imageStr('soundtray/bars_10')));
 		backingBar.x = 9;
 		backingBar.y = 5;
@@ -47,12 +43,8 @@ class FunkinSoundTray extends FlxSoundTray
 		addChild(backingBar);
 		backingBar.alpha = 0.4;
 
-		// clear the bars array entirely, it was initialized
-		// in the super class
 		_bars = [];
 
-		// 1...11 due to how block named the assets,
-		// we are trying to get assets bars_1-10
 		for (i in 1...11)
 		{
 			var bar:Bitmap = new Bitmap(Assets.getBitmapData(Paths.imageStr('soundtray/bars_' + i)));
@@ -67,11 +59,9 @@ class FunkinSoundTray extends FlxSoundTray
 		y = -height;
 		screenCenter();
 
-		volumeUpSound = Paths.soundStr('soundtray/Volup');
-		volumeDownSound = Paths.soundStr('soundtray/Voldown');
-		volumeMaxSound = Paths.soundStr('soundtray/VolMAX');
-
-		trace("Custom tray added!");
+		volumeUp = Paths.sound('soundtray/Volup');
+		volumeDown = Paths.sound('soundtray/Voldown');
+		volumeMax = Paths.sound('soundtray/VolMAX');
 	}
 
 	override public function update(MS:Float):Void
@@ -79,7 +69,6 @@ class FunkinSoundTray extends FlxSoundTray
 		y = y + (0.1 * (FlxG.elapsed / (1 / 60))) * (lerpYPos - y);
 		alpha = alpha + (0.25 * (FlxG.elapsed / (1 / 60))) * (alphaTarget - alpha);
 
-		// Animate sound tray thing
 		if (_timer > 0)
 		{
 			_timer -= (MS / 1000);
@@ -97,7 +86,6 @@ class FunkinSoundTray extends FlxSoundTray
 			active = false;
 
 			#if FLX_SAVE
-			// Save sound preferences
 			if (FlxG.save.isBound)
 			{
 				FlxG.save.data.mute = FlxG.sound.muted;
@@ -128,10 +116,10 @@ class FunkinSoundTray extends FlxSoundTray
 
 		if (!silent)
 		{
-			var sound = up ? volumeUpSound : volumeDownSound;
+			var sound:Sound = up ? volumeUp : volumeDown;
 
 			if (globalVolume == 10)
-				sound = volumeMaxSound;
+				sound = volumeMax;
 
 			if (sound != null)
 				FlxG.sound.load(sound).play();
