@@ -2001,21 +2001,14 @@ class PlayState extends MusicBeatState
 		iconP1.animation.curAnim.curFrame = (healthBar.percent < 20) ? 1 : 0;
 		iconP2.animation.curAnim.curFrame = (healthBar.percent > 80) ? 1 : 0;
 
-		#if CRUSHERNOTDRIP_BUILD
-		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(healthLerp * 50, 2)}%]';
-		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (healthLerp * 50), 2)}%]';
-		#end
-
 		return healthLerp;
 	}
 
 	function set_health(value:Float):Float
 	{
 		health = value;
-		#if !CRUSHERNOTDRIP_BUILD
 		healthPlayerTxt.text = '[Health: ${FlxMath.roundDecimal(health * 50, 2)}%]';
 		healthOppTxt.text = '[Health: ${FlxMath.roundDecimal((healthBar.bounds.max * 50) - (health * 50), 2)}%]';
-		#end
 		return health;
 	}
 
