@@ -1,5 +1,6 @@
 package states;
 
+import objects.SleepZGroup;
 import flixel.group.FlxGroup;
 import objects.ChillinCursor;
 
@@ -19,12 +20,13 @@ class ShopState extends MusicBeatState
 	// --OBJECTS SHIT-- \\
 	//
 
-	static inline final imageAssetsPath:String = 'shop';
+	public static inline final imageAssetsPath:String = 'shop';
 
 	var jb:FlxSprite;
 	var box:FlxSprite;
 	var boombox:FlxSprite;
 	var cat:FlxSprite;
+	var sleepZGrp:SleepZGroup;
 
 	var stage:FlxGroup;
 
@@ -32,7 +34,7 @@ class ShopState extends MusicBeatState
 	// --SONG SHIT-- \\
 	//
 
-	static inline final songAssetsPath:String = 'shop';
+	public static inline final songAssetsPath:String = 'shop';
 
 	final songAssetNames:Array<String> = ['idle', 'shopping'];
 
@@ -40,6 +42,11 @@ class ShopState extends MusicBeatState
 	 * The current song to play when playMusic() is called.
 	 */
 	var curSongState:String = 'idle';
+	
+	/**
+	 * The current position of the song.
+	 */
+	static var songPosition:Float = 0;
 
 	//
 	// -- CURSOR SHIT -- \\
@@ -123,6 +130,9 @@ class ShopState extends MusicBeatState
 		cat.x = box.x - cat.width;
 		cat.y = (FlxG.height - box.height);
 		stage.add(cat);
+
+		sleepZGrp = new SleepZGroup();
+		stage.add(sleepZGrp);
 	}
 
 	function makeDisclaimer():Void
@@ -150,6 +160,7 @@ class ShopState extends MusicBeatState
 	{
 		FlxG.sound.music.stop();
 		FlxG.sound.playMusic(Paths.music('$songAssetsPath/$curSongState'), 0.95);
+		FlxG.sound.music.time = songPosition;
 		Conductor.bpm = 106;
 	}
 
@@ -159,17 +170,17 @@ class ShopState extends MusicBeatState
 	{
 		super.update(elapsed);
 
-		Conductor.songPosition = FlxG.sound.music.time;
+		Conductor.songPosition = songPosition = FlxG.sound.music.time;
 
 		if (isShopping)
 			jb.animation.play('talk');
 		else
 			jb.animation.play('idle');
 
-		if (shopCursor.overlaps(cat))
+		/*if (shopCursor.overlaps(cat))
 			shopCursor.switchMouseState(SLEEPING, false);
 		else if (!shopCursor.overlaps(cat) && shopCursor.mouseState == SLEEPING)
-			shopCursor.switchMouseState(NORMAL, false);
+			shopCursor.switchMouseState(NORMAL, false);*/
 
 		if(isExitting)
 			return;
@@ -203,6 +214,9 @@ class ShopState extends MusicBeatState
 					bopper.animation.curAnim.curFrame = 0;
 			}
 		}
+
+		if(curBeat % 4 == 0)
+			sleepZGrp.generateZ();
 
 		super.beatHit();
 	}
