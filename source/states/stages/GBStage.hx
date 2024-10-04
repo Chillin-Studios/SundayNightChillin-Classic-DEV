@@ -128,11 +128,14 @@ class GBStage extends BaseStage
 		}
 	}
 
-	override public function camZoomChange(zoom:Float):Void
+	/*override public function camZoomChange(zoom:Float):Void
 	{
 		if (ClientPrefs.data.shaders && isRaining && rainShader != null)
-			rainShader.setFloatArray('uCameraBounds', [camGame.viewLeft / zoom, camGame.viewTop / zoom, camGame.viewRight / zoom, camGame.viewBottom / zoom]);
-	}
+		{
+			rainShader.setFloatArray('uCameraBounds', [camGame.viewLeft / 0.6, camGame.viewTop / 0.6, camGame.viewRight / 0.6, camGame.viewBottom / 0.6]);
+			rainShader.setFloat('uScale', FlxG.height / 500);
+		}
+	}*/
 
 	public function applyLightning():Void
 	{
@@ -222,7 +225,7 @@ class GBStage extends BaseStage
 				{
 					rainShader = game.createRuntimeShader('rain');
 					rainShader.setFloatArray('uScreenResolution', [FlxG.width, FlxG.height]);
-					rainShader.setFloatArray('uCameraBounds', [camGame.viewLeft / game.defaultCamZoom, camGame.viewTop / game.defaultCamZoom, camGame.viewRight / game.defaultCamZoom, camGame.viewBottom / game.defaultCamZoom]);
+					rainShader.setFloatArray('uCameraBounds', [camGame.viewLeft, camGame.viewTop, camGame.viewRight, camGame.viewBottom]);
 					rainShader.setFloat('uTime', 1);
 					rainShader.setFloat('uIntensity', 0.2);
 					rainShader.setFloat('uScale', FlxG.height / 500);

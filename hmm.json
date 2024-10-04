@@ -45,7 +45,7 @@
     {
       "name": "hxdiscord_rpc",
       "type": "haxelib",
-      "version": "1.2.0"
+      "version": "1.2.4"
     },
     {
       "name": "hxvlc",
@@ -61,8 +61,10 @@
     },
     {
       "name": "SScript",
-      "type": "haxelib",
-      "version": "7.7.0"
+      "type": "git",
+      "dir": null,
+      "ref": "main",
+      "url": "https://github.com/TechnikTil/SScriptBackup"
     },
     {
       "name": "tjson",

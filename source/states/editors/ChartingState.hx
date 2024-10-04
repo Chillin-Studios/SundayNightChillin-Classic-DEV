@@ -78,9 +78,11 @@ class ChartingState extends MusicBeatState
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
 		['Set Property', "Value 1: Variable name\nValue 2: New value"],
+		['Stage Zoom', "Zooms in the Camera!\n\nValue 1: New Camera Zoom\nValue 2: Time for zoom, otherwise will use default"],
 		['Play Sound', "Value 1: Sound file name\nValue 2: Volume (Default: 1), ranges from 0 to 1"],
 		['Countdown', "Shows the Countdown Sprite\nValue 1: which tick to play\nValue 2: If the sound should play"],
-		['Duet Camera', "Positions the camera to be at the middle of gf.\nValue 1: Should it go back to the regular position?\nValue 2: What should the Y position be?"]
+		['Duet Camera', "Positions the camera to be at the middle of gf.\nValue 1: Should it go back to the regular position?\nValue 2: What should the Y position be?"],
+		['Character Outline', "OMG it's the event that every Psych Mod uses"]
 	];
 
 	var _file:FileReference;

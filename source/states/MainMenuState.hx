@@ -21,6 +21,7 @@ class MainMenuState extends MusicBeatState
 		'freeplay',
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'shop',
+		'gallery',
 		'credits',
 		'options'
 	];
@@ -187,6 +188,9 @@ class MainMenuState extends MusicBeatState
 
 						case 'shop':
 							MusicBeatState.switchState(new ShopState());
+
+						case 'gallery':
+							MusicBeatState.switchState(new GalleryState());
 
 						case 'credits':
 							MusicBeatState.switchState(new CreditsState());

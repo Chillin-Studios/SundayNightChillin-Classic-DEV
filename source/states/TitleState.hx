@@ -207,10 +207,14 @@ class TitleState extends MusicBeatState
 
 		add(bg);
 
+		if(ClientPrefs.data.shaders) swagShader = new ColorSwap();
+
 		if (titleJSON.checkerData.enabled)
 		{
 			var checkeredBG:Checkers = new Checkers(titleJSON.checkerData);
 			add(checkeredBG);
+			if(swagShader != null)
+				checkeredBG.shader = swagShader.shader;
 		}
 
 		logoBl = new FlxSprite();
@@ -235,7 +239,6 @@ class TitleState extends MusicBeatState
 		logoBl.animation.play('bump');
 		logoBl.updateHitbox();
 
-		if(ClientPrefs.data.shaders) swagShader = new ColorSwap();
 		add(logoBl);
 		if(swagShader != null)
 			logoBl.shader = swagShader.shader;

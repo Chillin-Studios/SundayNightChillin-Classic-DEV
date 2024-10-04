@@ -6,7 +6,7 @@ class GalleryState extends MusicBeatState
     {
         var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBG'));
 		bg.antialiasing = ClientPrefs.data.antialiasing;
-		bg.color = 0xFF818181;
+		bg.color = 0xFFCA02A9;
 		bg.scrollFactor.set();
 		bg.screenCenter();
 		add(bg);

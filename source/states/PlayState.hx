@@ -94,6 +94,9 @@ class PlayState extends MusicBeatState
 
 	private var isCameraOnForcedPos:Bool = false;
 
+	public var charOutlineBG:FlxSprite;
+	public var charOutlineTwn:FlxTween;
+
 	public var boyfriendMap:Map<String, Character> = new Map<String, Character>();
 	public var dadMap:Map<String, Character> = new Map<String, Character>();
 	public var gfMap:Map<String, Character> = new Map<String, Character>();
@@ -1550,6 +1553,13 @@ class PlayState extends MusicBeatState
 
 			case 'Play Sound':
 				Paths.sound(event.value1);
+
+			case 'Character Outline':
+				charOutlineBG = new FlxSprite().makeGraphic(FlxG.width * 2, FlxG.height * 2, 0xFFFFFFFF);
+				charOutlineBG.scrollFactor.set();
+				charOutlineBG.alpha = 0;
+				charOutlineBG.screenCenter();
+				addBehindGF(charOutlineBG);
 		}
 		stagesFunc(function(stage:BaseStage) stage.eventPushedUnique(event));
 	}
@@ -2403,10 +2413,10 @@ class PlayState extends MusicBeatState
 					if(stageZoomTween != null)
 						stageZoomTween.cancel();
 
-					stageZoomTween = FlxTween.tween(this, {defaultCamZoom: flValue1}, flValue2, {
+					stageZoomTween = FlxTween.tween(camGame, {zoom: flValue1}, flValue2, {
 						ease: FlxEase.cubeOut,
 						onUpdate: function(twn:FlxTween) {
-							camGame.zoom = defaultCamZoom; // so the tween thing doesnt mess around
+							defaultCamZoom = camGame.zoom; // so the tween thing doesnt mess around
 						},
 						onComplete: function(twn:FlxTween) {
 							stageZoomTween = null;
@@ -2417,6 +2427,27 @@ class PlayState extends MusicBeatState
 				{
 					if(flValue1 != null)
 						defaultCamZoom = flValue1;
+				}
+
+			case "Character Outline":
+				FlxTween.cancelTweensOf(charOutlineBG);
+				if(charOutlineTwn != null) charOutlineTwn.cancel();
+
+				if(charOutlineBG.alpha == 0)
+				{
+					charOutlineTwn = FlxTween.tween(boyfriendGroup, {color: FlxColor.BLACK}, 1, {onUpdate: function(_) {
+						dadGroup.color = gfGroup.color = boyfriendGroup.color;
+					}});
+	
+					FlxTween.tween(charOutlineBG, {alpha: 1}, 0.5);
+				}
+				else
+				{
+					charOutlineTwn = FlxTween.tween(boyfriendGroup, {color: FlxColor.WHITE}, 1, {onUpdate: function(_) {
+						dadGroup.color = gfGroup.color = boyfriendGroup.color;
+					}});
+	
+					FlxTween.tween(charOutlineBG, {alpha: 0}, 0.5);
 				}
 		}
 
