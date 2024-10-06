@@ -88,6 +88,11 @@
 						"Change Scroll Speed",
 						"1.2",
 						"0"
+					],
+					[
+						"Character Outline",
+						"",
+						""
 					]
 				]
 			],
@@ -117,6 +122,11 @@
 					[
 						"Change Scroll Speed",
 						"1.1",
+						""
+					],
+					[
+						"Character Outline",
+						"",
 						""
 					]
 				]

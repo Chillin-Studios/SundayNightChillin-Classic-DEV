@@ -34,6 +34,8 @@ typedef SwagSong =
 
 class Song
 {
+	public static var loadedSongName:String;
+
 	public var song:String;
 	public var notes:Array<SwagSection>;
 	public var events:Array<Dynamic>;
@@ -131,7 +133,11 @@ class Song
 		}
 
 		var songJson:Dynamic = parseJSONshit(rawJson);
-		if(jsonInput != 'events') StageData.loadDirectory(songJson);
+		if(jsonInput != 'events')
+		{
+			StageData.loadDirectory(songJson);
+			loadedSongName = formattedFolder;
+		}
 		onLoadJson(songJson);
 		return songJson;
 	}

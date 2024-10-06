@@ -95,7 +95,7 @@ class PlayState extends MusicBeatState
 	private var isCameraOnForcedPos:Bool = false;
 
 	public var charOutlineBG:FlxSprite;
-	public var charOutlineTwn:FlxTween;
+	public var charOutlineTwns:Array<FlxTween> = [];
 
 	public var boyfriendMap:Map<String, Character> = new Map<String, Character>();
 	public var dadMap:Map<String, Character> = new Map<String, Character>();
@@ -2430,24 +2430,37 @@ class PlayState extends MusicBeatState
 				}
 
 			case "Character Outline":
-				FlxTween.cancelTweensOf(charOutlineBG);
-				if(charOutlineTwn != null) charOutlineTwn.cancel();
+				if(charOutlineTwns != null)
+				{
+					for(i in charOutlineTwns)
+					{
+						i.destroy();
+					}
+
+					charOutlineTwns = [];
+				}
 
 				if(charOutlineBG.alpha == 0)
 				{
-					charOutlineTwn = FlxTween.tween(boyfriendGroup, {color: FlxColor.BLACK}, 1, {onUpdate: function(_) {
-						dadGroup.color = gfGroup.color = boyfriendGroup.color;
-					}});
+					for(char in [boyfriend, dad, gf])
+					{
+						var curColor:FlxColor = char.color;
+						curColor.alphaFloat = char.alpha;
+						charOutlineTwns.push(FlxTween.color(char, 1, curColor, FlxColor.BLACK));
+					}
 	
-					FlxTween.tween(charOutlineBG, {alpha: 1}, 0.5);
+					charOutlineTwns.push(FlxTween.tween(charOutlineBG, {alpha: 1}, 0.5));
 				}
 				else
 				{
-					charOutlineTwn = FlxTween.tween(boyfriendGroup, {color: FlxColor.WHITE}, 1, {onUpdate: function(_) {
-						dadGroup.color = gfGroup.color = boyfriendGroup.color;
-					}});
+					for(char in [boyfriend, dad, gf])
+					{
+						var curColor:FlxColor = char.color;
+						curColor.alphaFloat = char.alpha;
+						charOutlineTwns.push(FlxTween.color(char, 1, curColor, FlxColor.WHITE));
+					}
 	
-					FlxTween.tween(charOutlineBG, {alpha: 0}, 0.5);
+					charOutlineTwns.push(FlxTween.tween(charOutlineBG, {alpha: 0}, 0.5));
 				}
 		}
 

@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Sunday Night Chillin' (Demo)" file="SundayNightChillin" packageName="com.gameboy1969.sundaynightchillin" package="com.gameboy1969.sundaynightchillin" main="Main" version="0.2.8" company="gameboy1969" />
+	<app title="Sunday Night Chillin'" file="SundayNightChillin" packageName="com.gameboy1969.sundaynightchillin" package="com.gameboy1969.sundaynightchillin" main="Main" version="0.2.8" company="gameboy1969" />
 
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
 	<app preloader="flixel.system.FlxPreloader" />
@@ -10,7 +10,7 @@
 
 	<!-- ______________________ PSYCH / SNC CUSTOMIZATION ______________________ -->
 
-	<define name="SNC_DEV_BUILD" if="debug" value="6" />
+	<define name="SNC_DEV_BUILD" if="debug" value="7" />
 
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="DISCORD_ALLOWED" if="cpp" />
