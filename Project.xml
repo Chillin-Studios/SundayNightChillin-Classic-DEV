@@ -94,14 +94,10 @@
 	<haxedef name="HXCPP_STACK_TRACE" if="CRASH_HANDLER" />
 	<haxedef name="HXVLC_NO_SHARE_DIRECTORY" if="hxvlc" />
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB" />
+	<haxedef name="message.reporting" value="pretty" />
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
 	<haxedef name='no-deprecation-warnings' />
 	<haxedef name="NO_PRECOMPILED_HEADERS" if="linux" />
-
-	<haxedef name='no-deprecation-warnings' />
-
-	<!-- Haxe 4.3.0+: Enable pretty syntax errors and stuff. -->
-	<haxedef name="message.reporting" value="pretty" />
 
 	<haxeflag name="--macro" value="allowPackage('flash')" />
 	<haxeflag name="--macro" value="include('my.pack')" />
