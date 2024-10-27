@@ -96,7 +96,7 @@
 	<haxedef name="LINC_LUA_RELATIVE_DYNAMIC_LIB" />
 	<haxedef name="message.reporting" value="pretty" />
 	<haxedef name="NAPE_RELEASE_BUILD" unless="debug" />
-	<haxedef name='no-deprecation-warnings' />
+	<haxedef name="no-deprecation-warnings" />
 	<haxedef name="NO_PRECOMPILED_HEADERS" if="linux" />
 
 	<haxeflag name="--macro" value="allowPackage('flash')" />
@@ -104,7 +104,7 @@
 
 	<!-- _________________________________ Custom _______________________________ -->
 
-	<assets path='extras/appicons/iconOG.png' rename='icon.png' if="linux" />
+	<assets path="extras/appicons/iconOG.png" rename="icon.png" if="linux" />
 
 	<icon path="extras/appicons/icon16.png" size='16'/>
 	<icon path="extras/appicons/icon32.png" size='32'/>
