@@ -89,7 +89,7 @@ class Main extends Sprite
 	{
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
-
+			
 		var ratioX:Float = stageWidth / game.width;
 		var ratioY:Float = stageHeight / game.height;
 		game.width = Math.ceil(stageWidth / -1);

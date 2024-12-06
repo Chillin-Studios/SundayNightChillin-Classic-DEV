@@ -125,13 +125,16 @@ class SNCLoadingState extends MusicBeatState
         loadingBarClipped = new FlxSprite(19, 491).loadGraphic(Paths.image('loading/bar'));
         loadingBarClipped.clipRect = new FlxRect(0, 0, 0, loadingBar.height);
         loadingBarClipped.antialiasing = ClientPrefs.data.antialiasing;
+        loadingBarClipped.color = 0xffff16d2;
         add(loadingBarClipped);
 
         var loadText:FlxSprite = new FlxSprite(885, 423).loadGraphic(Paths.image('loading/load'));
         loadText.antialiasing = ClientPrefs.data.antialiasing;
         add(loadText);
 
-        loadThingsPLEASE();
+        new FlxTimer().start(1, function(_) {
+            loadThingsPLEASE();
+        });
     }
 
     public function loadThingsPLEASE():Void
@@ -169,7 +172,11 @@ class SNCLoadingState extends MusicBeatState
         loadingBarClipped.clipRect.width = loadingBarClipped.width * total;
 
         if(total >= 1)
-            MusicBeatState.switchState(finishState);
+        {
+            new FlxTimer().start(1, function(_) {
+                MusicBeatState.switchState(finishState);
+            });
+        }
     }
 
     // TODO: add logic

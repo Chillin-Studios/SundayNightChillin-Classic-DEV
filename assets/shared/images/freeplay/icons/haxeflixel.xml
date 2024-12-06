@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="haxeflixel.png">
+	<!-- Created with Adobe Animate version 24.0.5.40 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="5" y="5" width="143" height="166" frameX="0" frameY="0" frameWidth="144" frameHeight="166"/>
+	<SubTexture name="idle0001" x="153" y="5" width="144" height="166"/>
+</TextureAtlas>

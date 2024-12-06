@@ -1,0 +1,73 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "dees idle"
+		},
+		{
+			"offsets": [
+				230,
+				-50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "dees left"
+		},
+		{
+			"offsets": [
+				40,
+				-121
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "dees down"
+		},
+		{
+			"offsets": [
+				42,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "dees up"
+		},
+		{
+			"offsets": [
+				-90,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "dees right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/dees_legacy",
+	"position": [
+		0,
+		130
+	],
+	"healthicon": "dees",
+	"flip_x": false,
+	"camera_position": [
+		-100,
+		100
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

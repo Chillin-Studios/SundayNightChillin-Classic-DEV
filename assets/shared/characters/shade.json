@@ -1,0 +1,75 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": false,
+			"name": "Shade idle"
+		},
+		{
+			"offsets": [
+				-2,
+				8
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT",
+			"loop": false,
+			"name": "Shade left"
+		},
+		{
+			"offsets": [
+				-6,
+				-18
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Shade down"
+		},
+		{
+			"offsets": [
+				-10,
+				2
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Shade up"
+		},
+		{
+			"offsets": [
+				-15,
+				-3
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Shade right"
+		}
+	],
+	"vocals_file": "shade",
+	"no_antialiasing": false,
+	"image": "characters/Shade",
+	"position": [
+		30,
+		105
+	],
+	"healthicon": "shade",
+	"flip_x": false,
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

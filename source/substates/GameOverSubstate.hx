@@ -3,9 +3,7 @@ package substates;
 import objects.Character;
 import flixel.FlxObject;
 import flixel.FlxSubState;
-
 import states.StoryMenuState;
-import states.FreeplaySelector;
 
 class GameOverSubstate extends MusicBeatSubstate
 {
@@ -93,7 +91,7 @@ class GameOverSubstate extends MusicBeatSubstate
 			if (PlayState.isStoryMode)
 				MusicBeatState.switchState(new StoryMenuState());
 			else
-				MusicBeatState.switchState(new FreeplaySelector());
+				MusicBeatState.switchState(new FreeplayState(true));
 
 			FlxG.sound.playMusic(Paths.music('sncTitle'));
 			PlayState.instance.callOnScripts('onGameOverConfirm', [false]);

@@ -84,13 +84,24 @@ class DiscordClient
 		if (hasStartTimestamp) startTimestamp = Date.now().getTime();
 		if (endTimestamp > 0) endTimestamp = startTimestamp + endTimestamp;
 
+		#if SNC_DEV_BUILD
+		presence.details = "We working on " + states.MainMenuState.chillinVersion;
+		presence.state = "NO leaks!1!!111";
+		presence.largeImageKey = 'leaks';
+		presence.smallImageKey = '';
+		#else
 		presence.details = details;
 		presence.state = state;
 		presence.largeImageKey = 'icon';
-		presence.largeImageText = "SNC Version: " + states.MainMenuState.chillinVersion;
 		presence.smallImageKey = smallImageKey;
+		#end
+		presence.largeImageText = "SNC Version: " + states.MainMenuState.chillinVersion;
 		presence.startTimestamp = Std.int(startTimestamp / 1000);
+		#if SNC_DEV_BUILD
+		presence.endTimestamp = Std.int((endTimestamp / 1000) * FlxG.random.float(1, 20));
+		#else
 		presence.endTimestamp = Std.int(endTimestamp / 1000);
+		#end
 		updatePresence();
 	}
 

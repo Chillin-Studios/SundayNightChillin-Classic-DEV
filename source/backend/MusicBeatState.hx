@@ -32,7 +32,7 @@ class MusicBeatState extends FlxUIState
 		super.create();
 
 		if(!skip) {
-			openSubState(new CustomFadeTransition(0.6, true));
+			openSubState(new BaldiDitheringTransition());
 		}
 		FlxTransitionableState.skipNextTransOut = false;
 		timePassedOnState = 0;
@@ -135,15 +135,23 @@ class MusicBeatState extends FlxUIState
 			return;
 		}
 
-		if(FlxTransitionableState.skipNextTransIn) FlxG.switchState(nextState);
+		/*if(FlxTransitionableState.skipNextTransIn) FlxG.switchState(nextState);
 		else startTransition(nextState);
-		FlxTransitionableState.skipNextTransIn = false;
+		FlxTransitionableState.skipNextTransIn = false;*/
+		if(!FlxTransitionableState.skipNextTransOut)
+			BaldiDitheringTransition.grabLastState();
+
+		FlxG.switchState(nextState);
 	}
 
 	public static function resetState() {
-		if(FlxTransitionableState.skipNextTransIn) FlxG.resetState();
+		/*if(FlxTransitionableState.skipNextTransIn) FlxG.resetState();
 		else startTransition();
-		FlxTransitionableState.skipNextTransIn = false;
+		FlxTransitionableState.skipNextTransIn = false;*/
+		if(!FlxTransitionableState.skipNextTransOut)
+			BaldiDitheringTransition.grabLastState();
+
+		FlxG.resetState();
 	}
 
 	public static function startTransition(nextState:FlxState = null)

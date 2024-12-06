@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gb.png">
+	<!-- Created with Adobe Animate version 24.0.5.40 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="5" y="5" width="148" height="151"/>
+	<SubTexture name="idle0001" x="158" y="5" width="148" height="151"/>
+</TextureAtlas>

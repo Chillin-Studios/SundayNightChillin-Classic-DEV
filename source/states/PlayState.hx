@@ -2638,7 +2638,7 @@ class PlayState extends MusicBeatState
 					FlxG.save.flush();  
 				}
 
-				MusicBeatState.switchState(new FreeplaySelector());
+				MusicBeatState.switchState(new FreeplayState(true));
 				FlxG.sound.playMusic(Paths.music('sncTitle'));
 				changedDifficulty = false;
 			}

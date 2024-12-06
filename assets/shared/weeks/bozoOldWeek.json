@@ -1,24 +1,34 @@
 {
 	"songs": [
 		[
-			"Chillin' (Ancient)",
-			"gb-old",
+			"An-eble",
+			"bozo",
 			[
-				255,
-				0,
-				235
+				206,
+				77,
+				63
 			],
-			"volume1"
+			"volume2"
 		],
 		[
-			"Chillin' (Really Old)",
-			"gb-old",
+			"Lame (Old)",
+			"bozo",
 			[
-				255,
-				0,
-				235
+				206,
+				77,
+				63
 			],
-			"volume1"
+			"volume2"
+		],
+		[
+			"Deestroyer (Old)",
+			"dees",
+			[
+				82,
+				154,
+				149
+			],
+			"volume2"
 		]
 	],
 	"weekCharacters": [
@@ -29,11 +39,11 @@
 	"weekBackground": "",
 	"weekBefore": "",
 	"storyName": "",
-	"weekName": "Old Chillin Songs",
+	"weekName": "Bozo Week Old",
 	"startUnlocked": true,
 	"hiddenUntilUnlocked": false,
 	"hideStoryMode": true,
 	"hideFreeplay": false,
-	"difficulties": "Chillin'",
+	"difficulties": "Normal",
 	"album": "old"
 }

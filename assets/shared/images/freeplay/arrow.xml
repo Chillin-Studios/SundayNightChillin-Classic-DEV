@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="arrow.png">
+	<!-- Created with Adobe Animate version 24.0.5.40 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="arrow0000" x="5" y="238" width="261" height="240" frameX="0" frameY="0" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0000" x="5" y="5" width="381" height="180" frameX="-2" frameY="-30" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0001" x="5" y="5" width="381" height="180" frameX="-2" frameY="-30" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0002" x="391" y="5" width="289" height="212" frameX="0" frameY="-14" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0003" x="391" y="5" width="289" height="212" frameX="0" frameY="-14" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0004" x="685" y="5" width="275" height="228" frameX="-1" frameY="-6" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0005" x="685" y="5" width="275" height="228" frameX="-1" frameY="-6" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0006" x="5" y="238" width="261" height="240" frameX="-2" frameY="0" frameWidth="383" frameHeight="240"/>
+	<SubTexture name="press0007" x="5" y="238" width="261" height="240" frameX="-2" frameY="0" frameWidth="383" frameHeight="240"/>
+</TextureAtlas>

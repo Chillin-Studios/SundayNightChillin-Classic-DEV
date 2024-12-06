@@ -10,8 +10,8 @@ import states.editors.MasterEditorMenu;
 
 class MainMenuState extends MusicBeatState
 {
-	public static var psychEngineVersion:String = '0.7.3';
-	public static var chillinVersion:String = '0.2.0';
+	public static var psychEngineVersion:String = '0.7.3*';
+	public static var chillinVersion:String = '2.0';
 	public static var curSelected:Int = 0;
 
 	var menuItems:FlxTypedGroup<FlxSprite>;
@@ -179,7 +179,7 @@ class MainMenuState extends MusicBeatState
 							MusicBeatState.switchState(new StoryMenuState());
 
 						case 'freeplay':
-							MusicBeatState.switchState(new FreeplaySelector());
+							MusicBeatState.switchState(new FreeplayState());
 
 						#if ACHIEVEMENTS_ALLOWED
 						case 'awards':
