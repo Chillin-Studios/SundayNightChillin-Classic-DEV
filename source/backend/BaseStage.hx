@@ -1,5 +1,6 @@
 package backend;
 
+import objects.Note;
 import flixel.FlxBasic;
 import flixel.FlxObject;
 import flixel.FlxSubState;
@@ -93,6 +94,10 @@ class BaseStage extends FlxBasic
 
 	// Die.
 	public function gameOver() {}
+
+	// Note
+	public function goodNoteHit(note:Note) {}
+	public function opponentNoteHit(note:Note) {}
 
 	public function addBehindGF(obj:FlxBasic) insert(members.indexOf(game.gfGroup), obj);
 	public function addBehindBF(obj:FlxBasic) insert(members.indexOf(game.boyfriendGroup), obj);

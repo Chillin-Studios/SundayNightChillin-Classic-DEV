@@ -211,6 +211,7 @@ class FreeplayState extends MusicBeatState
             }
 
             curSelectionSelector = partIndex;
+            filterSongByAlbum(freeplayOptions[curSelectionSelector][0]);
             changeItemSelector();
             curFreeplayState = SONG;
         }

@@ -2,6 +2,7 @@ package states.stages;
 
 import states.stages.objects.*;
 import objects.Character;
+import objects.Note;
 
 class PozoStage extends BaseStage
 {
@@ -9,6 +10,8 @@ class PozoStage extends BaseStage
 	var rightBoppers:BGSprite;
 	var ppno:BGSprite;
 	var phoen:BGSprite;
+
+	var deezNeets:Character;
 
 	override function create():Void
 	{
@@ -36,6 +39,13 @@ class PozoStage extends BaseStage
 
 	override function createPost():Void
 	{
+		if(true)
+		{
+			deezNeets = new Character(dadGroup.x + 317, dadGroup.y, 'dees');
+			game.startCharacterPos(deezNeets);
+			add(deezNeets);
+		}
+
 		ppno = new BGSprite('fgbopper1', 280, 250, 1.5, 0.1, ['peppinobopper']);
 		ppno.setGraphicSize(Std.int(ppno.width * 0.7));
 		add(ppno);
@@ -45,12 +55,26 @@ class PozoStage extends BaseStage
 		add(phoen);
 	}
 
-	override function beatHit()
+	override function beatHit():Void
 	{
 		for(i in [leftBoppers, rightBoppers, ppno, phoen])
 		{
 			if(i.animation.finished)
 				i.dance();
+		}
+
+		if (deezNeets != null && curBeat % deezNeets.danceEveryNumBeats == 0 && !deezNeets.getAnimationName().startsWith('sing') && !deezNeets.stunned)
+			deezNeets.dance();
+	}
+	
+	override function opponentNoteHit(note:Note):Void
+	{
+		if(note.noteType == 'Second Character Note' && deezNeets != null)
+		{
+			var animToPlay:String = game.singAnimations[Std.int(Math.abs(Math.min(game.singAnimations.length-1, note.noteData)))];
+
+			deezNeets.playAnim(animToPlay, true);
+			deezNeets.holdTimer = 0;
 		}
 	}
 }

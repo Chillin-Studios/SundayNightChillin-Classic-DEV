@@ -120,6 +120,7 @@ class Note extends FlxSprite
 	public var noAnimation:Bool = false;
 	public var noMissAnimation:Bool = false;
 	public var hitCausesMiss:Bool = false;
+	public var lightStrumline:Bool = true;
 	public var distance:Float = 2000;
 
 	public var hitsoundDisabled:Bool = false;
@@ -205,6 +206,19 @@ class Note extends FlxSprite
 				case 'No Animation':
 					noAnimation = true;
 					noMissAnimation = true;
+
+				case 'Second Character Note':
+					noAnimation = true;
+					noMissAnimation = true;
+					lightStrumline = false;
+
+					rgbShader.r = 0xFFB8B8B8;
+					rgbShader.g = 0xFFFFFFFF;
+					rgbShader.b = 0xFF242424;
+
+					noteSplashData.r = 0xFFB8B8B8;
+					noteSplashData.g = 0xFFFFFFFF;
+					noteSplashData.a = 0.4;
 
 				case 'GF Sing':
 					gfNote = true;
