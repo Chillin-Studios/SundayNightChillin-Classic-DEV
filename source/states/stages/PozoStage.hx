@@ -39,7 +39,7 @@ class PozoStage extends BaseStage
 
 	override function createPost():Void
 	{
-		if(true)
+		if(songName == 'idk i forgot the name')
 		{
 			deezNeets = new Character(dadGroup.x + 317, dadGroup.y, 'dees');
 			game.startCharacterPos(deezNeets);
