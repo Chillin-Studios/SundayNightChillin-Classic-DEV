@@ -25,4 +25,13 @@ class GalleryState extends MusicBeatState
 
         super.create();
     }
+
+	override public function update(elapsed:Float):Void
+	{
+		if(controls.BACK)
+		{
+			FlxG.sound.play(Paths.sound('cancelMenu'));
+			MusicBeatState.switchState(new MainMenuState());
+		}
+	}
 }
