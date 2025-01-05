@@ -290,7 +290,7 @@ class PlayState extends MusicBeatState
 		cpuControlled = (ClientPrefs.getGameplaySetting('botplay') && (#if SNC_DEV_BUILD !ClientPrefs.data.spittingFactsMechanics || #end Paths.formatToSongPath(SONG.song) != 'spitting-facts'));
 		guitarHeroSustains = ClientPrefs.data.guitarHeroSustains;
 
-		if(Paths.formatToSongPath(SONG.song) == 'anger-issues') // fuck you json u dickhead fucking bitchass whore i literally made the option disabled by default BUT NOOOOOOOOOO
+		if(Paths.formatToSongPath(SONG.song) == 'anger-issues') // fuck you json u dickhead fucking bitchass whore i literally made the option disabled by default BUT NOOOOOOOOOO 
 			guitarHeroSustains = false;
 
 		var barcodeFont:Bool = FlxG.random.bool(0.1);

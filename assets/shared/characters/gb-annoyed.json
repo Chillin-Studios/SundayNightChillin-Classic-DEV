@@ -83,7 +83,6 @@
 
 	"flip_x": false,
 	"no_antialiasing": false,
-	"vocals_file": "gb",
 
 	"note_colors": [
 		["FF00EB", "FFFFFF", "4C0047"],
