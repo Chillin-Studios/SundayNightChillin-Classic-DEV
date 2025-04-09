@@ -15,6 +15,8 @@
 
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="CHART_BLOCKS" unless="SNC_DEV_BUILD" />
+	<define name="CHECK_FOR_UPDATES" if="desktop"/>
+	<define name="CRASH_HANDLER" if="desktop release" />
 	<define name="DISCORD_ALLOWED" if="cpp" />
 	<define name="HSCRIPT_ALLOWED" if="desktop" />
 	<define name="MODS_ALLOWED" if="desktop" />
@@ -39,8 +41,6 @@
 
 	<!-- __________________________ Game Assets & Etc. __________________________ -->
 
-	<define name="CRASH_HANDLER" if="desktop release" />
-
 	<assets path="assets/fonts" />
 
 	<assets path="assets/shared"        exclude="*.ogg" if="web"/>
@@ -63,8 +63,6 @@
 	<library name="videos"        preload="true" if="VIDEOS_ALLOWED"/>
 	<library name="songs"         preload="true" />
 	<library name="week_assets"   preload="true" />
-
-	<define name="CHECK_FOR_UPDATES" if="desktop"/>
 
 	<section if="MODS_ALLOWED">
 		<assets path='example_mods' rename='mods' embed='false'/>
